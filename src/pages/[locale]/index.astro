@@ -1,0 +1,17 @@
+---
+import Layout from '../../layout/Layout.astro';
+import { supportedLocales } from '../../../src/consts/locales';
+import { Button } from '@/components/ui/button';
+import NavBar from '@/components/NavBar/NavBar.astro';
+
+export const getStaticPaths = () => {
+  const locales = supportedLocales.map((locale) => ({ params: { locale } }));
+  return locales;
+};
+
+const { locale } = Astro.params;
+---
+
+<Layout description='Home page' title='Home page'>
+  <NavBar />
+</Layout>
