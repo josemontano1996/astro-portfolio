@@ -2,7 +2,8 @@
 import Layout from '../../layout/Layout.astro';
 import { supportedLocales } from '../../../src/consts/locales';
 import HeroSection from '@/components/HeroSection/HeroSection.astro';
-
+import AboutSection from '@/components/AboutSection/AboutSection.astro';
+import IntersectionObserverComponent from '@/components/IntersectionObserver';
 export const getStaticPaths = () => {
   const locales = supportedLocales.map((locale) => ({ params: { locale } }));
   return locales;
@@ -13,4 +14,7 @@ const { locale } = Astro.params;
 
 <Layout description='Home page' title='Home page'>
   <HeroSection />
+  <IntersectionObserverComponent animation='fade-in' client:load>
+    <AboutSection />
+  </IntersectionObserverComponent>
 </Layout>

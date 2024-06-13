@@ -1,0 +1,43 @@
+---
+const list = [
+      'Best SEO practices',
+      'Internationalization',
+      'Responsive Design',
+      'Authentication',
+      'Databases',
+      'And much more...',
+    ]
+
+---
+
+
+<section id='about' class='max-w-[85vw] mx-auto'>
+  <div class='flex flex-row items-start gap-5'>
+    <div class='flex flex-col justify-center items-center'>
+      <div class='w-5 h-5 rounded-full bg-info-strong'></div>
+      <div class='w-1 h-80 violet-gradient'></div>
+    </div>
+    <div class='w-screen'>
+      <h1
+        class='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'
+      >
+        Hi, I am
+        <span class='text-info-strong'>{import.meta.env.PUBLIC_NAME}</span>
+      </h1>
+      <p
+        class='text-info font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] my-4 lg:my-8'
+      >
+        I develop the Full-Stack web applications, that your bussiness need.
+      </p>
+      <ul class='list-disc grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 text-xl pl-8'>
+        {
+          list.map((li) => (
+            <li  class='italic lg:text-[26px] sm:text-[20px] xs:text-[20px] text-[16px]'>
+              {li}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

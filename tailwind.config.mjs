@@ -18,6 +18,7 @@ export default {
         sans: ['Inter Variable', ...defaulTheme.fontFamily.sans],
       },
       colors: {
+        'info-strong': '#915eff',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
