@@ -20,6 +20,9 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.0.18
         version: 5.0.18
+      '@nanostores/react':
+        specifier: ^0.7.2
+        version: 0.7.2(nanostores@0.10.3)(react@18.3.1)
       '@radix-ui/react-slot':
         specifier: ^1.0.2
         version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
@@ -50,6 +53,9 @@ importers:
       maath:
         specifier: ^0.10.7
         version: 0.10.7(@types/three@0.163.0)(three@0.165.0)
+      nanostores:
+        specifier: ^0.10.3
+        version: 0.10.3
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -700,6 +706,13 @@ packages:
     resolution: {integrity: sha512-53sCTG4FaJBaAq/tcufARtVYDMDGqyBT9i7F453pWGhZ5LqubDHDWtYoHo9VhQqMcHTEexdJqSsR58y+9HVmQA==}
     peerDependencies:
       three: '>= 0.159.0'
+
+  '@nanostores/react@0.7.2':
+    resolution: {integrity: sha512-e3OhHJFv3NMSFYDgREdlAQqkyBTHJM91s31kOZ4OvZwJKdFk5BLk0MLbh51EOGUz9QGX2aCHfy1RvweSi7fgwA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      nanostores: ^0.9.0 || ^0.10.0
+      react: '>=18.0.0'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1868,6 +1881,10 @@ packages:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  nanostores@0.10.3:
+    resolution: {integrity: sha512-Nii8O1XqmawqSCf9o2aWqVxhKRN01+iue9/VEd1TiJCr9VT5XxgPFbF1Edl1XN6pwJcZRsl8Ki+z01yb/T/C2g==}
+    engines: {node: ^18.0.0 || >=20.0.0}
 
   nlcst-to-string@3.1.1:
     resolution: {integrity: sha512-63mVyqaqt0cmn2VcI2aH6kxe1rLAmSROqHMA0i4qqg1tidkfExgpb0FGMikMCn86mw5dFtBtEANfmSSK7TjNHw==}
@@ -3255,6 +3272,11 @@ snapshots:
     dependencies:
       promise-worker-transferable: 1.0.4
       three: 0.165.0
+
+  '@nanostores/react@0.7.2(nanostores@0.10.3)(react@18.3.1)':
+    dependencies:
+      nanostores: 0.10.3
+      react: 18.3.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -4705,6 +4727,8 @@ snapshots:
       thenify-all: 1.6.0
 
   nanoid@3.3.7: {}
+
+  nanostores@0.10.3: {}
 
   nlcst-to-string@3.1.1:
     dependencies:

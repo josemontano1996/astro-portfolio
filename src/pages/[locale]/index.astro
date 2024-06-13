@@ -1,11 +1,7 @@
 ---
 import Layout from '../../layout/Layout.astro';
 import { supportedLocales } from '../../../src/consts/locales';
-import { ScrollToIdLink } from '@/components/ScrollToIdLink';
-import { EarthCanvas } from '@/components/HeroSection/EarthCanvas';
-import StarsCanvas from '@/components/HeroSection/StarsCanvas';
-import { cn } from '@/lib/utils';
-import { buttonVariants } from '@/components/ui/button';
+import HeroSection from '@/components/HeroSection/HeroSection.astro';
 
 export const getStaticPaths = () => {
   const locales = supportedLocales.map((locale) => ({ params: { locale } }));
@@ -16,29 +12,5 @@ const { locale } = Astro.params;
 ---
 
 <Layout description='Home page' title='Home page'>
-  <section class='min-h-[70vh] select-none'>
-    <div class='flex relative justify-between flex-col lg:flex-row'>
-      <div class='lg:w-1/2 mt-4 text-center'>
-        <div class='lg:absolute lg:w-[45vw] lg:top-[20%]'>
-          <h2 class='font-medium text-2xl lg:text-4xl'>
-            A World of Solutions at the Reach of Your Hand
-          </h2>
-          <h3 class='font-medium text-xl my-4 lg:my-8'>
-            The web developer you search, for the solutions you need.
-          </h3>
-          <ScrollToIdLink
-            client:load
-            id='about'
-            text='Discover more'
-            styles={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
-          />
-          <div></div>
-        </div>
-      </div>
-      <div class='lg:w-1/2 md:h-[550px] h-[350px]'>
-        <EarthCanvas client:load />
-      </div>
-    </div>
-    <StarsCanvas client:load />
-  </section>
+  <HeroSection />
 </Layout>
