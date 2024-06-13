@@ -8,13 +8,12 @@ const links = [
   { id: 'about', text: 'About' },
   { id: 'experience', text: 'Experience' },
   { id: 'projects', text: 'Projects' },
-  { id: 'contact', text: 'Contact' },
 ];
 
 const { locale } = Astro.params;
 ---
 
-<header id="header" class='z-20 fixed top-0 py-2 h-[10vh] px-6 w-full left-0 bg-primary'>
+<header id='header' class='z-20 sticky top-0 py-4 px-6 w-full left-0 bg-background'>
   <nav class='flex items-center'>
     <div class='w-full flex justify-between items-center max-w-8xl mx-auto'>
       <a href={`/${locale}`} class='flex items-center gap-2'>
@@ -30,9 +29,10 @@ const { locale } = Astro.params;
           ))
         }
         <li class={`hover:text-white text-[18px] font-medium cursor-pointer  text-secondary`}>
-          <ContactButton t='Contact' />
+          <ContactButton t='Contact' client:load />
         </li>
       </ul>
+      <!-- TODO: include mobile menu -->
       <!-- <MobileRightMenu /> -->
     </div>
   </nav>
