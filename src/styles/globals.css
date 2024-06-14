@@ -7,39 +7,61 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in-out; 
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes slideIn {
-  from { transform: translateY(70px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .slide-in {
-  animation: slideIn 0.5s ease-in-out; 
+  animation: slideIn 0.5s ease-in-out;
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(70px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .slide-in-right {
-  animation: slideInRight 0.5s ease-in-out; 
+  animation: slideInRight 0.5s ease-in-out;
 }
 
 @keyframes slideInLeft {
-  from { transform: translateX(-70px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .slide-in-left {
-  animation: slideInLeft 0.5s ease-in-out; 
+  animation: slideInLeft 0.5s ease-in-out;
 }
 
 @layer base {
@@ -62,8 +84,8 @@ body {
     --muted: 260 14.5% 71.6%; /* secondary */
     --muted-foreground: 250 100% 90.6%; /* info */
 
-    --accent: 260 14.5% 71.6%; /* secondary */
-    --accent-foreground: 230 94% 3.7%; /* primary */
+    --accent:  271 81.3% 55.9%; /* secondary */
+    --accent-foreground: 0 0% 100%; /* primary */
 
     --destructive: 262 100% 67.3%; /* info-strong */
     --destructive-foreground: 0 0% 95.3%; /* white-100 */
@@ -114,8 +136,6 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-
 
 .hash-span {
   margin-top: -100px;
