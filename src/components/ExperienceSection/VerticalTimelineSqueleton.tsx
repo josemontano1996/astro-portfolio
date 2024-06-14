@@ -6,7 +6,7 @@ type Props = {
 };
 export const VerticalTimelineSqueleton = ({ children, mainColor = 'accent' }: Props) => {
   return (
-    <li className={cn('border-l-2', `border-${mainColor}`)}>
+    <li className={cn('border-l-2 max-w-[90vw]', `border-${mainColor}`)}>
       <div className='md:flex flex-start'>
         <div
           className={cn(
@@ -31,7 +31,7 @@ export const VerticalTimelineSqueleton = ({ children, mainColor = 'accent' }: Pr
         </div>
         <article
           className={cn(
-            'block p-6 rounded-lg w-full shadow-lg bg-gray-100 max-w-md ml-6 mb-10 text-black'
+            'block p-6 rounded-lg  max-w-[85vw] w-[600px] shadow-lg bg-gray-100  ml-6 mb-10 text-black'
           )}
         >
           {children}

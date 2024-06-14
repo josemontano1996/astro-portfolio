@@ -23,51 +23,65 @@ export const TechCard = () => {
           <span className='sm:block hidden'>Databases</span>
         </TabsTrigger>
       </TabsList>
-      <TabsContent value='languages' >
-        <ul className='text-xl space-y-2 mt-3'>
-          <li className='flex items-center gap-1'>
-            <IoLogoJavascript color='yellow' size={30} />
-            <span>JavaScript</span>
-          </li>
-          <li className='flex items-center gap-1'>
-            <IoLogoJavascript color='yellow' size={30} />
-            <span>JavaScript</span>
-          </li>
-          <li className='flex items-center gap-1'>
-            <IoLogoJavascript color='yellow' size={30} />
-            <span>JavaScript</span>
-          </li>
-          <li className='flex items-center gap-1'>
-            <IoLogoJavascript color='yellow' size={30} />
-            <span>JavaScript</span>
-          </li>
-        </ul>
-      </TabsContent>
-      <TabsContent value='client'>
-        <ul className=''>
-          <li>React</li>
-          <li>Next.js</li>
-          <li>Redux</li>
-          <li>Chakra UI</li>
-          <li>Material UI</li>
-          <li>Styled Components</li>
-        </ul>
-      </TabsContent>
-      <TabsContent value='server'>
-        <ul className=''>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>GraphQL</li>
-          <li>REST API</li>
-        </ul>
-      </TabsContent>
-      <TabsContent value='database'>
-        <ul className=''>
-          <li>MongoDB</li>
-          <li>PostgreSQL</li>
-          <li>MySQL</li>
-        </ul>
-      </TabsContent>
+      <div className='h-[300px] mt-3'>
+        <TabsContent value='languages'>
+          <ul className='text-xl space-y-2'>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+            <li className='flex items-center gap-1'>
+              <IoLogoJavascript color='yellow' size={30} />
+              <span>JavaScript</span>
+            </li>
+          </ul>
+        </TabsContent>
+        <TabsContent value='client'>
+          <ul className=''>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+            <li>Chakra UI</li>
+            <li>Material UI</li>
+            <li>Styled Components</li>
+          </ul>
+        </TabsContent>
+        <TabsContent value='server'>
+          <ul className=''>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>GraphQL</li>
+            <li>REST API</li>
+          </ul>
+        </TabsContent>
+        <TabsContent value='database'>
+          <ul className=''>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </TabsContent>
+      </div>
     </Tabs>
   );
 };

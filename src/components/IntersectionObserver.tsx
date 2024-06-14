@@ -12,7 +12,7 @@ const IntersectionObserverComponent: React.FC<Props> = ({
   children,
   animation,
   styles,
-  thresholdVal = 0.2,
+  thresholdVal = 0.3,
 }) => {
   const ref = useRef<HTMLDivElement | null>(null);
 

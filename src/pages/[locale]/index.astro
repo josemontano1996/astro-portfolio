@@ -6,6 +6,7 @@ import AboutSection from '@/components/AboutSection/AboutSection.astro';
 import IntersectionObserverComponent from '@/components/IntersectionObserver';
 import TechSection from '@/components/TechSection/TechSection.astro';
 import ExperienceSection from '@/components/ExperienceSection/ExperienceSection.astro';
+import ProjectsSection from '@/components/ProjectsSection/ProjectsSection.astro';
 export const getStaticPaths = () => {
   const locales = supportedLocales.map((locale) => ({ params: { locale } }));
   return locales;
@@ -25,6 +26,9 @@ const { locale } = Astro.params;
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='fade-in' client:load>
       <ExperienceSection />
+    </IntersectionObserverComponent>
+    <IntersectionObserverComponent animation='slide-in' client:load>
+      <ProjectsSection />
     </IntersectionObserverComponent>
   </div>
 </Layout>

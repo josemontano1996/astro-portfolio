@@ -8,9 +8,11 @@ export const VerticalTimelineComponent = ({
   experiences: IExperienceElement[];
 }) => {
   return (
-    <div className='grid grid-cols-2 gap-6 mt-10'>
+    <div className='lg:grid grid-cols-2 lg:space-x-12 mt-10 flex flex-col items-center'>
       <div>
-        <h3 className='text-2xl text-foreground font-semibold mb-6 ml-3'>Profesional Experience</h3>
+        <h3 className='text-2xl text-foreground font-semibold mb-6 lg:ml-3'>
+          Profesional Experience
+        </h3>
         <ol>
           {experiences.map((experience, index) => (
             <VerticalTimelineSqueleton key={index}>
@@ -20,7 +22,9 @@ export const VerticalTimelineComponent = ({
         </ol>
       </div>
       <div>
-        <h3 className='text-2xl text-foreground font-semibold mb-6 ml-3'>Educational Qualifications</h3>
+        <h3 className='text-2xl text-foreground font-semibold mb-6 lg:ml-3'>
+          Educational Qualifications
+        </h3>
         <ol>
           {experiences.map((experience, index) => (
             <VerticalTimelineSqueleton key={index}>
