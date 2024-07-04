@@ -5,26 +5,29 @@ import { ScrollToIdLink } from '../ScrollToIdLink';
 import { ContactButton } from './ContactButton';
 import { LanguageSelector } from './LanguageSelector';
 import { MobileMenu } from './MobileMenu';
+import loadTranslations from '@/lib/loadTranslations';
 
 export type TNavLinks = {
   id: string;
   text: string;
 };
 
-const links: TNavLinks[] = [
-  { id: 'about', text: 'About' },
-  { id: 'experience', text: 'Experience' },
-  { id: 'projects', text: 'Projects' },
-];
-
 let { locale } = Astro.params;
 
 if (!locale) {
   locale = 'en';
 }
+
+const t = loadTranslations(locale);
+
+const links: TNavLinks[] = [
+  { id: 'about', text: t.navBar.about },
+  { id: 'experience', text: t.navBar.experience },
+  { id: 'projects', text: t.navBar.projects },
+];
 ---
 
-<header id='header' class='z-20 sticky top-0 py-4  w-full left-0 bg-background text-secondary'>
+<header id='header' class='z-20 sticky top-0 py-4 w-full left-0 bg-background text-secondary'>
   <div class='items-center flex'>
     <nav class='w-full flex justify-between items-center max-w-8xl mx-auto'>
       <a href={`/${locale}`} class='flex items-center gap-2'>
@@ -40,7 +43,7 @@ if (!locale) {
           ))
         }
         <li class={`hover:text-white text-[18px] font-medium cursor-pointer  `}>
-          <ContactButton t='Contact' client:load />
+          <ContactButton t={t.navBar.contact} client:load />
         </li>
         <li>
           <LanguageSelector
@@ -51,6 +54,6 @@ if (!locale) {
         </li>
       </ul>
     </nav>
-    <MobileMenu links={links} locale={locale} client:load />
+    <MobileMenu links={links} contact={t.navBar.contact} locale={locale} client:load />
   </div>
 </header>

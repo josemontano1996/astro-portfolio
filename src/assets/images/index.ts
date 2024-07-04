@@ -1,5 +1,4 @@
 import PEPImg from './projects/pepwebpage.png';
-import PortfolioImg from './projects/portfolioweb.png';
 import NebrijaLogo from './experience/nebrija.webp';
 import UdemyLogo from './experience/udemypng.png';
 import TeslaWebImg from './projects/tesla-landing.png';
@@ -10,7 +9,6 @@ import IngridWebpage from './projects/ingrid-webpage.png';
 
 export {
   PEPImg,
-  PortfolioImg,
   NebrijaLogo,
   UdemyLogo,
   TeslaWebImg,

@@ -4,6 +4,13 @@ import { ScrollToIdLink } from '../ScrollToIdLink';
 import { buttonVariants } from '../ui/button';
 import { EarthCanvas } from './EarthCanvas';
 import StarsCanvas from './StarsCanvas';
+import type { IHeroSection } from '@/interfaces/home-page';
+
+interface Props {
+  t: IHeroSection
+}
+
+const {t} = Astro.props
 ---
 
 <section class='min-h-[70vh] select-none lg:h-[80vh]'>
@@ -11,15 +18,15 @@ import StarsCanvas from './StarsCanvas';
       <div class='lg:w-1/2 mt-4 text-center'>
         <div class='lg:absolute lg:w-[45vw] lg:top-[25%]'>
           <h2 class='font-medium sm:text-3xl text-2xl lg:text-4xl'>
-            A World of Solutions at the Reach of Your Hand
+            {t.title}
           </h2>
           <h3 class='font-medium text-lg sm:text-xl my-8 lg:my-12'>
-            The web developer you search, for the solutions you need.
+            {t.subtitle}
           </h3>
           <ScrollToIdLink
             client:load
             id='about'
-            text='Discover more'
+            text={t.callToAction}
             styles={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
           />
           <div></div>

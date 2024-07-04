@@ -3,6 +3,7 @@ import { SiExpress, SiMongodb, SiMongoose, SiMui, SiTypescript } from 'react-ico
 import { FaBootstrap, FaJava, FaNodeJs, FaPhp, FaReact, FaSass } from 'react-icons/fa';
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import { DiMysql } from 'react-icons/di';
+import { SquareCodeIcon } from 'lucide-react';
 
 
 export const TypeScriptIcon = () => {

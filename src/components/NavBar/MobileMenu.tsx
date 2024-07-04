@@ -8,9 +8,10 @@ import { LanguageSelector } from './LanguageSelector';
 type Props = {
   links: TNavLinks[];
   locale: string;
+  contact: string;
 };
 
-export const MobileMenu = ({ links, locale }: Props) => {
+export const MobileMenu = ({ links, contact, locale }: Props) => {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -53,7 +54,7 @@ export const MobileMenu = ({ links, locale }: Props) => {
             onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
             className='p-2'
           >
-            <ContactButton t='Contact' />
+            <ContactButton t={contact} />
           </li>
           <li key={links.length + 2} className='mx-auto'>
             <LanguageSelector locale={locale} styles='bg-popover text-popover-foreground' />

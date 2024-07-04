@@ -1,14 +1,24 @@
+import type { ITechElement } from '@/interfaces/home-page';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { DatabaseIcon, LaptopIcon, ServerIcon, SquareCodeIcon } from 'lucide-react';
 import { IoLogoJavascript } from 'react-icons/io5';
 
-export const TechCard = () => {
+interface Props {
+  cards: ITechElement[];
+}
+
+export const TechCard = ({ cards }: Props) => {
+  const languages = cards[0];
+  const frontEnd = cards[1];
+  const backEnd = cards[2];
+  const databases = cards[3];
+
   return (
     <Tabs defaultValue='languages'>
       <TabsList className='text-primary'>
         <TabsTrigger value='languages' className='flex items-center gap-1'>
-          <SquareCodeIcon />
-          <span className='sm:block hidden'>Languages</span>
+          <languages.icon />
+          <span className='sm:block hidden'>{languages.title}</span>
         </TabsTrigger>
         <TabsTrigger value='client' className='flex items-center gap-1'>
           <LaptopIcon />

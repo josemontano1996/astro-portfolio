@@ -10,11 +10,7 @@ export interface IHomePage {
 export interface IMetadada {
   title: string;
   description: string;
-  keyword: string;
   og: {
-    title: string;
-    description: string;
-    type: string;
     image: string;
     url: string;
   };

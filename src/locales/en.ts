@@ -1,5 +1,5 @@
 import type { IFooter, IHomePage } from '@/interfaces/home-page';
-import { DatabaseIcon, LaptopIcon, ServerIcon, SquareCodeIcon } from 'lucide-react';
+import { DatabaseIcon, LaptopIcon, ServerIcon, SquareCodeIcon, SquareIcon } from 'lucide-react';
 import {
   BootstrapIcon,
   CssIcon,
@@ -36,14 +36,7 @@ export const homePage: IHomePage = {
     description: `Welcome to my portfolio! I'm a full stack developer specializing 
     in web development, applications, and systems. Check out my projects and experience
     in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
-    keyword: `developer,web developer, full stack, web development, applications, javascript,
-     mongo db, express.js, next app router, next pages router, react server components`,
     og: {
-      title: `jm3 - Full Stack Web Developer Portfolio`,
-      description: `Welcome to my portfolio! I'm a full stack developer specializing 
-    in web development, applications, and systems. Check out my projects and experience
-    in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
-      type: 'website',
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
       url: import.meta.env.PUBLIC_WEB_URL,
@@ -78,7 +71,7 @@ export const homePage: IHomePage = {
     cards: [
       {
         title: 'Languages',
-        icon: SquareCodeIcon,
+        icon: SquareIcon,
         ul: {
           ready: [
             { name: 'TypeScript', icon: TypeScriptIcon, alt: 'Typescript' },

@@ -1,15 +1,12 @@
 ---
-const list = [
-      'Best SEO practices',
-      'Internationalization',
-      'Responsive Design',
-      'Authentication',
-      'Databases',
-      'And much more...',
-    ]
+import type { IAboutSection } from '@/interfaces/home-page';
 
+interface Props {
+  t: IAboutSection;
+}
+
+const { t } = Astro.props;
 ---
-
 
 <section id='about' class='max-w-[85vw] mx-auto'>
   <div class='flex flex-row items-start gap-5'>
@@ -21,20 +18,18 @@ const list = [
       <h1
         class='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'
       >
-        Hi, I am
+        {t.title}
         <span class='text-info-strong'>{import.meta.env.PUBLIC_NAME}</span>
       </h1>
       <p
         class='text-info font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] my-4 lg:my-8'
       >
-        I develop the Full-Stack web applications, that your bussiness need.
+        {t.subtitle}
       </p>
       <ul class='list-disc grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 text-xl pl-8'>
         {
-          list.map((li) => (
-            <li  class='italic lg:text-[26px] sm:text-[20px] xs:text-[20px] text-[16px]'>
-              {li}
-            </li>
+          t.ul.map((li) => (
+            <li class='italic lg:text-[26px] sm:text-[20px] xs:text-[20px] text-[16px]'>{li}</li>
           ))
         }
       </ul>

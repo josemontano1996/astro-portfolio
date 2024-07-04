@@ -7,22 +7,29 @@ import IntersectionObserverComponent from '@/components/IntersectionObserver';
 import TechSection from '@/components/TechSection/TechSection.astro';
 import ExperienceSection from '@/components/ExperienceSection/ExperienceSection.astro';
 import ProjectsSection from '@/components/ProjectsSection/ProjectsSection.astro';
+import loadTranslations from '@/lib/loadTranslations';
+
+
 export const getStaticPaths = () => {
   const locales = supportedLocales.map((locale) => ({ params: { locale } }));
   return locales;
 };
 
 const { locale } = Astro.params;
+
+const t = loadTranslations(locale);
+
+const { metadata, heroSection, aboutSection, techSection, experienceSection } = t.homePage;
 ---
 
-<Layout description='Home page' title='Home page'>
+<Layout description='Home page' ogImg={metadata.og.image} title='Home page'>
   <div class='flex flex-col gap-8'>
-    <HeroSection />
+    <HeroSection t={heroSection} />
     <IntersectionObserverComponent animation='fade-in' client:load>
-      <AboutSection />
+      <AboutSection t={aboutSection} />
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='slide-in' client:load>
-      <TechSection />
+      <TechSection t={techSection}/>
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='fade-in' client:load>
       <ExperienceSection />
