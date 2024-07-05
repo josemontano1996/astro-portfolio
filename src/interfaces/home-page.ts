@@ -37,17 +37,16 @@ export interface ITechSection {
 
 export interface ITechElement {
   title: string;
-  icon: any;
   ul: {
     ready: {
       name: string;
-      icon: any; // Icon path/reference
+      icon: string;
       alt: string;
       bg?: string; // Optional background color
     }[];
     incoming?: {
       name: string;
-      icon: any; // Icon path/reference
+      icon: string;
       alt: string;
       bg?: string; // Optional background color
     }[];

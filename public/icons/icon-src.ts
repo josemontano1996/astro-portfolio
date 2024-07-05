@@ -1,0 +1,17 @@
+export const reactIcon = "/icons/react.svg";
+export const javascriptIcon = "/icons/javascript.svg";
+export const typescriptIcon = "/icons/typescript.svg";
+export const javaIcon = "/icons/java.svg";
+export const phpIcon = "/icons/php.svg";
+export const cssIcon = "/icons/css.svg";
+export const sassIcon = "/icons/sass.svg";
+export const tailwindIcon = "/icons/tailwind.svg";
+export const bootstrapIcon = "/icons/bootstrap.svg";
+export const materialuiIcon = "/icons/mui.svg";
+export const nextjsIcon = "/icons/nextjs.svg";
+export const expressIcon = "/icons/express.svg";
+export const nodeIcon = "/icons/node.svg";
+export const mongodbIcon = "/icons/mongodb.svg";
+export const mongooseIcon = "/icons/mongoose.svg";
+export const mysqlIcon = "/icons/mysql.svg";
+export const linuxIcon = "/icons/linux.svg";

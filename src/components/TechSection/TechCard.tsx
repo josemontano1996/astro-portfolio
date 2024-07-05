@@ -2,7 +2,9 @@ import type { ITechElement } from "@/interfaces/home-page";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import {
   DatabaseIcon,
+  FileTerminalIcon,
   LaptopIcon,
+  MonitorIcon,
   ServerIcon,
   SquareCodeIcon,
 } from "lucide-react";
@@ -21,78 +23,61 @@ export const TechCard = ({ cards }: Props) => {
     <Tabs defaultValue="languages">
       <TabsList className="text-primary">
         <TabsTrigger value="languages" className="flex items-center gap-1">
-          <SquareCodeIcon />
+          <FileTerminalIcon />
           <span className="sm:block hidden">{languages.title}</span>
         </TabsTrigger>
-        <TabsTrigger value="client" className="flex items-center gap-1">
-          <LaptopIcon />
-          <span className="sm:block hidden">Front-end</span>
+        <TabsTrigger value="front" className="flex items-center gap-1">
+          <MonitorIcon />
+          <span className="sm:block hidden">{frontEnd.title}</span>
         </TabsTrigger>
-        <TabsTrigger value="server" className="flex items-center gap-1">
+        <TabsTrigger value="back" className="flex items-center gap-1">
           <ServerIcon />
-          <span className="sm:block hidden">Back-end</span>
+          <span className="sm:block hidden">{backEnd.title}</span>
         </TabsTrigger>
         <TabsTrigger value="database" className="flex items-center gap-1">
           <DatabaseIcon />
-          <span className="sm:block hidden">Databases</span>
+          <span className="sm:block hidden">{databases.title}</span>
         </TabsTrigger>
       </TabsList>
-      <div className="h-[300px] mt-3">
+      <div className="h-[200px] mt-3">
         <TabsContent value="languages">
           <ul className="text-xl space-y-2">
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <ServerIcon color="yellow" size={30} />
-              <span>JavaScript</span>
-            </li>
+            {languages.ul.ready.map((li, i) => (
+              <li className="flex items-center gap-3" key={i}>
+                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <span>{li.name}</span>
+              </li>
+            ))}
           </ul>
         </TabsContent>
-        <TabsContent value="client">
-          <ul className="">
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Redux</li>
-            <li>Chakra UI</li>
-            <li>Material UI</li>
-            <li>Styled Components</li>
+        <TabsContent value="front">
+          <ul className="text-xl space-y-2">
+            {frontEnd.ul.ready.map((li, i) => (
+              <li className="flex items-center gap-3" key={i}>
+                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <span>{li.name}</span>
+              </li>
+            ))}
           </ul>
         </TabsContent>
-        <TabsContent value="server">
-          <ul className="">
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>GraphQL</li>
-            <li>REST API</li>
+        <TabsContent value="back">
+          <ul className="text-xl space-y-2">
+            {backEnd.ul.ready.map((li, i) => (
+              <li className="flex items-center gap-3" key={i}>
+                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <span>{li.name}</span>
+              </li>
+            ))}
           </ul>
         </TabsContent>
         <TabsContent value="database">
-          <ul className="">
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
+          <ul className="text-xl space-y-2">
+            {databases.ul.ready.map((li, i) => (
+              <li className="flex items-center gap-3" key={i}>
+                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <span>{li.name}</span>
+              </li>
+            ))}
           </ul>
         </TabsContent>
       </div>

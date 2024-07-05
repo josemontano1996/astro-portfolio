@@ -4,7 +4,6 @@ import {
   LaptopIcon,
   ServerIcon,
   SquareCodeIcon,
-  SquareIcon,
 } from "lucide-react";
 
 import {
@@ -18,6 +17,25 @@ import {
   UdemyLogo,
 } from "@/assets/images";
 import type { IContactPopUp, INavBar } from "@/interfaces/shared";
+import {
+  bootstrapIcon,
+  cssIcon,
+  expressIcon,
+  javaIcon,
+  javascriptIcon,
+  linuxIcon,
+  materialuiIcon,
+  mongodbIcon,
+  mongooseIcon,
+  mysqlIcon,
+  nextjsIcon,
+  nodeIcon,
+  phpIcon,
+  reactIcon,
+  sassIcon,
+  tailwindIcon,
+  typescriptIcon,
+} from "public/icons/icon-src";
 
 export const homePage: IHomePage = {
   metadata: {
@@ -61,62 +79,63 @@ export const homePage: IHomePage = {
     cards: [
       {
         title: "Languages",
-        icon: "=",
         ul: {
           ready: [
-            { name: "TypeScript", icon: "", alt: "Typescript" },
-            { name: "JavaScript", icon: "JavaScriptIcon", alt: "JavaScript" },
-          ],
-          incoming: [
-            { name: "Java", icon: "JavaIcon", alt: "Java" },
-            { name: "PHP", icon: "PhpIcon", alt: "PHP" },
+            { name: "TypeScript", icon: typescriptIcon, alt: "Typescript" },
+            { name: "JavaScript", icon: javascriptIcon, alt: "JavaScript" },
+            { name: "Java", icon: javaIcon, alt: "Java" },
+            { name: "PHP", icon: phpIcon, alt: "PHP" },
           ],
         },
       },
       {
         title: "Front-End",
-        icon: LaptopIcon,
         ul: {
           ready: [
-            { name: "React", icon: "ReactIcon", alt: "React" },
-            { name: "CSS3", icon: "CssIcon", alt: "Css" },
-            { name: "Sass", icon: "SassIcon", alt: "Sass" },
-            { name: "Tailwind", icon: "TailwindIcon", alt: "Tailwind" },
-            { name: "Bootstrap", icon: "BootstrapIcon", alt: "Bootstrap" },
-            { name: "Material UI", icon: "MuiIcon", alt: "Material UI" },
+            { name: "React", icon: reactIcon, alt: "React" },
+            { name: "Tailwind", icon: tailwindIcon, alt: "Tailwind" },
+            { name: "CSS3", icon: cssIcon, alt: "Css" },
+            { name: "Sass", icon: sassIcon, alt: "Sass" },
+            { name: "Bootstrap", icon: bootstrapIcon, alt: "Bootstrap" },
+            { name: "Material UI", icon: materialuiIcon, alt: "Material UI" },
           ],
         },
       },
       {
         title: "Back-end",
-        icon: ServerIcon,
         ul: {
           ready: [
             {
               name: "Next.js",
-              icon: "NextjsIcon",
+              icon: nextjsIcon,
               alt: "Next js",
               bg: "white",
             },
             {
               name: "Express.js",
-              icon: "ExpressjsIcon",
+              icon: expressIcon,
               alt: "Express js",
               bg: "white",
             },
-            { name: "Node.js", icon: "NodejsIcon", alt: "Node js" },
+            { name: "Node.js", icon: nodeIcon, alt: "Node js" },
+            { name: "PHP", icon: phpIcon, alt: "PHP" },
+            {
+              name: "Linux",
+              icon: linuxIcon,
+              alt: "linux",
+              bg: "white",
+            },
           ],
         },
       },
       {
         title: "Databases",
-        icon: DatabaseIcon,
         ul: {
           ready: [
-            { name: "MongoDB", icon: "MongoDbIcon", alt: "MongoDB" },
-            { name: "Mongoose", icon: "MongooseIcon", alt: "Mongoose" },
+            { name: "MySQL", icon: mysqlIcon, alt: "MySQL" },
+            { name: "MongoDB", icon: mongodbIcon, alt: "MongoDB" },
+            { name: "Mongoose", icon: mongooseIcon, alt: "Mongoose" },
           ],
-          incoming: [{ name: "MySQL", icon: "MySqlIcon", alt: "MySQL" }],
         },
       },
     ],
