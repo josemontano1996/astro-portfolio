@@ -1,7 +1,11 @@
-import type { ITechElement } from '@/interfaces/home-page';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
-import { DatabaseIcon, LaptopIcon, ServerIcon, SquareCodeIcon } from 'lucide-react';
-import { IoLogoJavascript } from 'react-icons/io5';
+import type { ITechElement } from "@/interfaces/home-page";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import {
+  DatabaseIcon,
+  LaptopIcon,
+  ServerIcon,
+  SquareCodeIcon,
+} from "lucide-react";
 
 interface Props {
   cards: ITechElement[];
@@ -14,60 +18,60 @@ export const TechCard = ({ cards }: Props) => {
   const databases = cards[3];
 
   return (
-    <Tabs defaultValue='languages'>
-      <TabsList className='text-primary'>
-        <TabsTrigger value='languages' className='flex items-center gap-1'>
-          <languages.icon />
-          <span className='sm:block hidden'>{languages.title}</span>
+    <Tabs defaultValue="languages">
+      <TabsList className="text-primary">
+        <TabsTrigger value="languages" className="flex items-center gap-1">
+          <SquareCodeIcon />
+          <span className="sm:block hidden">{languages.title}</span>
         </TabsTrigger>
-        <TabsTrigger value='client' className='flex items-center gap-1'>
+        <TabsTrigger value="client" className="flex items-center gap-1">
           <LaptopIcon />
-          <span className='sm:block hidden'>Front-end</span>
+          <span className="sm:block hidden">Front-end</span>
         </TabsTrigger>
-        <TabsTrigger value='server' className='flex items-center gap-1'>
+        <TabsTrigger value="server" className="flex items-center gap-1">
           <ServerIcon />
-          <span className='sm:block hidden'>Back-end</span>
+          <span className="sm:block hidden">Back-end</span>
         </TabsTrigger>
-        <TabsTrigger value='database' className='flex items-center gap-1'>
+        <TabsTrigger value="database" className="flex items-center gap-1">
           <DatabaseIcon />
-          <span className='sm:block hidden'>Databases</span>
+          <span className="sm:block hidden">Databases</span>
         </TabsTrigger>
       </TabsList>
-      <div className='h-[300px] mt-3'>
-        <TabsContent value='languages'>
-          <ul className='text-xl space-y-2'>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+      <div className="h-[300px] mt-3">
+        <TabsContent value="languages">
+          <ul className="text-xl space-y-2">
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
-            <li className='flex items-center gap-1'>
-              <IoLogoJavascript color='yellow' size={30} />
+            <li className="flex items-center gap-1">
+              <ServerIcon color="yellow" size={30} />
               <span>JavaScript</span>
             </li>
           </ul>
         </TabsContent>
-        <TabsContent value='client'>
-          <ul className=''>
+        <TabsContent value="client">
+          <ul className="">
             <li>React</li>
             <li>Next.js</li>
             <li>Redux</li>
@@ -76,16 +80,16 @@ export const TechCard = ({ cards }: Props) => {
             <li>Styled Components</li>
           </ul>
         </TabsContent>
-        <TabsContent value='server'>
-          <ul className=''>
+        <TabsContent value="server">
+          <ul className="">
             <li>Node.js</li>
             <li>Express</li>
             <li>GraphQL</li>
             <li>REST API</li>
           </ul>
         </TabsContent>
-        <TabsContent value='database'>
-          <ul className=''>
+        <TabsContent value="database">
+          <ul className="">
             <li>MongoDB</li>
             <li>PostgreSQL</li>
             <li>MySQL</li>
