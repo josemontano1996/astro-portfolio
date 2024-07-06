@@ -145,6 +145,7 @@ export const homePage: IHomePage = {
     title: 'Experience.',
     profesional: {
       title: 'Profesional Experience',
+      certificationTranslation: 'Explore Project',
       experiences: [
         {
           order: 6,
@@ -155,15 +156,17 @@ export const homePage: IHomePage = {
           date: 'December 2023 - Present',
           points: [
             'Boosted donation rates (5x) by implementing a secure payment platform for seamless transactions.',
-            'Creating from scratch and mantaining the official ONG webpage.',
-            'Developing a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
-            `Enhancing the organization's online presence.`,
+            "Created from scratch the official ONG's webpage. Currently improving and mantaining it.",
+            'Developed a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
+            `Enhanced the organization's online presence, volunteers engagement incrememented by 3x.`,
           ],
+          certification_url: 'https://www.pepev.org/',
         },
       ],
     },
     qualifications: {
       title: 'Educational Qualifications',
+      certificationTranslation: 'View certification',
       experiences: [
         {
           order: 5,

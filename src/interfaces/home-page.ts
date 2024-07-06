@@ -62,6 +62,7 @@ export interface IExperienceSection {
 
 export interface IExperienceSubsection {
   title: string;
+  certificationTranslation: string;
   experiences: IExperienceElement[];
 }
 

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 type Props = {
   mainColor?: string;
@@ -6,22 +6,21 @@ type Props = {
 };
 export const VerticalTimelineSqueleton = ({
   children,
-  mainColor = "accent",
+  mainColor = 'accent',
 }: Props) => {
-  console.log(mainColor);
   return (
-    <li className={cn("border-l-2 max-w-[90vw]", `border-${mainColor}`)}>
-      <div className="md:flex flex-start">
+    <li className={cn('max-w-[90vw] border-l-2', `border-${mainColor}`)}>
+      <div className="flex-start md:flex">
         <div
           className={cn(
-            `w-6 h-6 flex items-center justify-center rounded-full -ml-3.5 bg-${mainColor}`
+            `-ml-3.5 flex h-6 w-6 items-center justify-center rounded-full bg-${mainColor}`,
           )}
         >
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
-            className={cn("w-3 h-3", `text-${mainColor}-foreground`)}
+            className={cn('h-3 w-3', `text-${mainColor}-foreground`)}
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
@@ -34,7 +33,7 @@ export const VerticalTimelineSqueleton = ({
         </div>
         <article
           className={cn(
-            "block p-6 rounded-lg max-w-[85vw] w-[600px] shadow-lg bg-gray-100  ml-6 mb-10 text-black"
+            'mb-10 ml-6 block w-[600px] max-w-[85vw] rounded-lg bg-gray-100 p-6 text-black shadow-lg',
           )}
         >
           {children}
