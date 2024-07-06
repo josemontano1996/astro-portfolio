@@ -23,7 +23,7 @@ const { t } = Astro.props;
     </h4>
     <div class='mt-8 flex flex-wrap gap-7'>
       {
-        t.projects.map((project, index) => (
+        t.projects.map((project) => (
             <ProjectCard  {...project} />
         ))
       }
@@ -34,7 +34,7 @@ const { t } = Astro.props;
       </h4>
       <div class='mt-8 flex flex-wrap xl:grid xl:grid-cols-3 gap-7'>
         {
-          t.inprogress?.map((project, index) => (
+          t.inprogress?.map((project) => (
             <ProjectCard  {...project} />
           ))
         }

@@ -1,26 +1,22 @@
 import { cn } from '@/lib/utils';
 
 type Props = {
-  mainColor?: string;
   children: React.ReactNode;
 };
-export const VerticalTimelineSqueleton = ({
-  children,
-  mainColor = 'accent',
-}: Props) => {
+export const VerticalTimelineSqueleton = ({ children }: Props) => {
   return (
-    <li className={cn('max-w-[90vw] border-l-2', `border-${mainColor}`)}>
+    <li className={cn('max-w-[90vw] border-l-2', `border-accent`)}>
       <div className="flex-start md:flex">
         <div
           className={cn(
-            `-ml-3.5 flex h-6 w-6 items-center justify-center rounded-full bg-${mainColor}`,
+            `-ml-3.5 flex h-6 w-6 items-center justify-center rounded-full bg-accent`,
           )}
         >
           <svg
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
-            className={cn('h-3 w-3', `text-${mainColor}-foreground`)}
+            className={cn('h-3 w-3', `text-accent-foreground`)}
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"

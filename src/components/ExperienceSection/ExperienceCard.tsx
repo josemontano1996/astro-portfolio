@@ -14,8 +14,8 @@ export const ExperienceCard = ({
 }) => {
   return (
     <div className="space-y-2">
-      <h4 className={`text-${mainColor}`}>{experience.title}</h4>
-      <p className={`text-${secondaryColor}`}>{experience.company_name}</p>
+      <h4 className={`text-accent`}>{experience.title}</h4>
+      <p className={`text-black`}>{experience.company_name}</p>
       <p className="text-muted">{experience.date}</p>
 
       <ul className="ml-5 mt-5 list-disc space-y-2">
