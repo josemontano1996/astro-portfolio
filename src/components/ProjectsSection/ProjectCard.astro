@@ -1,0 +1,62 @@
+---
+import  AstroImage  from '@/components/AstroImage.astro';
+import type { IProjectElement } from '@/interfaces/home-page';
+import { Github, Link } from 'lucide-react';
+
+interface Props extends IProjectElement{}
+
+const {
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+  webpage_link,
+} = Astro.props
+
+---
+
+ <div class="bg-tertiary relative mx-auto flex min-h-[550px] flex-col rounded-2xl p-5 sm:w-[360px]">
+      <div class="relative h-[230px] w-full">
+        <AstroImage
+        quality='low'
+          src={image}
+          alt="project_image"
+          className="h-full w-full rounded-2xl object-cover"
+        />
+
+        <div class="card-img_hover absolute inset-0 m-3 flex justify-end gap-2">
+          {source_code_link && (
+            <a
+              target="_blank"
+              href={`${source_code_link}`}
+              class="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+            >
+             <Github />
+            </a>
+          )}
+          {webpage_link && (
+            <a
+              target="_blank"
+              href={`${webpage_link}`}
+              class="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+            >
+             <Link />
+            </a>
+          )}
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <h3 class="text-[24px] font-bold text-white">{name}</h3>
+        <p class="mt-2 text-[14px] text-secondary">{description}</p>
+      </div>
+
+      <div class="absolute bottom-3 mt-4 flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <p class={`text-[14px] ${tag.color}`}>
+            #{tag.name}
+          </p>
+        ))}
+      </div>
+    </div>

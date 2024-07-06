@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import  AstroImage  from '@/components/AstroImage.astro';
 import Logo from '../../assets/logo.webp';
 import { ScrollToIdLink } from '../ScrollToIdLink';
 import { ContactButton } from './ContactButton';
@@ -31,7 +31,7 @@ const links: TNavLinks[] = [
   <div class='items-center flex'>
     <nav class='w-full flex justify-between items-center max-w-8xl mx-auto'>
       <a href={`/${locale}`} class='flex items-center gap-2'>
-        <Image src={Logo} alt='logo image' class='w-auto h-14 object-contain' />
+        <AstroImage src={Logo} alt='logo image' className='w-auto h-14 object-contain' />
       </a>
 
       <ul class='list-none hidden md:flex flex-row gap-10 text-[18px] font-medium cursor-pointer'>

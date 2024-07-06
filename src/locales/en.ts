@@ -10,6 +10,7 @@ import {
   TesloShopImg,
   UdemyLogo,
 } from '@/assets/images';
+
 import type { IContactPopUp, INavBar } from '@/interfaces/shared';
 import {
   bootstrapIcon,
@@ -29,7 +30,7 @@ import {
   sassIcon,
   tailwindIcon,
   typescriptIcon,
-} from 'public/icons/icon-src';
+} from '@/../public/icons/icon-src';
 
 export const homePage: IHomePage = {
   metadata: {

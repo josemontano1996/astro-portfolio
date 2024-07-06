@@ -1,7 +1,4 @@
-import type {
-  IExperienceElement,
-  IExperienceSubsection,
-} from '@/interfaces/home-page';
+import type { IExperienceSubsection } from '@/interfaces/home-page';
 import { ExperienceCard } from './ExperienceCard';
 import { VerticalTimelineSqueleton } from './VerticalTimelineSqueleton';
 
