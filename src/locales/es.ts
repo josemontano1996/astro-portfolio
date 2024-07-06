@@ -1,10 +1,10 @@
-import type { IFooter, IHomePage } from "@/interfaces/home-page";
+import type { IFooter, IHomePage } from '@/interfaces/home-page';
 import {
   DatabaseIcon,
   LaptopIcon,
   ServerIcon,
   SquareCodeIcon,
-} from "lucide-react";
+} from 'lucide-react';
 
 import {
   CalendarpAppImg,
@@ -15,8 +15,8 @@ import {
   TeslaWebImg,
   TesloShopImg,
   UdemyLogo,
-} from "@/assets/images";
-import type { IContactPopUp, INavBar } from "@/interfaces/shared";
+} from '@/assets/images';
+import type { IContactPopUp, INavBar } from '@/interfaces/shared';
 import {
   reactIcon,
   javascriptIcon,
@@ -35,463 +35,484 @@ import {
   mysqlIcon,
   typescriptIcon,
   linuxIcon,
-} from "public/icons/icon-src";
+} from 'public/icons/icon-src';
 
 export const homePage: IHomePage = {
   metadata: {
-    title: "jm3 - Full Stack Web Developer Portfolio",
-    description: `Welcome to my portfolio! I'm a full stack developer specializing 
-    in web development, applications, and systems. Check out my projects and experience
-    in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
-
+    title: 'jm3 - Portafolio de Desarrollador Web Full Stack',
+    description: `¡Bienvenido a mi portafolio! Soy un desarrollador full stack especializado 
+    en desarrollo web, aplicaciones y sistemas. Descubre mis proyectos y experiencia
+    en tecnologías como TypeScript, JavaScript, React, Node.js y más.`,
     og: {
       image:
-        "https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png",
+        'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
       url: import.meta.env.PUBLIC_WEB_URL,
     },
   },
 
   heroSection: {
-    title: "A World of Solutions at the Reach of Your Hand",
-    subtitle: "The web developer you search, for the solutions you need.",
-    callToAction: "Discover more",
+    title: 'Un Mundo de Soluciones al Alcance de Tu Mano',
+    subtitle:
+      'El desarrollador web que buscas, para las soluciones que necesitas.',
+    callToAction: 'Descubre más',
   },
   aboutSection: {
-    title: "Hi, I am",
+    title: 'Hola, soy',
     subtitle:
-      "I develop the Full-Stack web applications, that your bussiness need.",
+      'Desarrollo aplicaciones web Full-Stack, que tu negocio necesita.',
     ul: [
-      "Best SEO practices",
-      "Internationalization",
-      "Responsive Design",
-      "Authentication",
-      "Databases",
-      "And much more...",
+      'Mejores prácticas de SEO',
+      'Internacionalización',
+      'Diseño Responsivo',
+      'Autenticación',
+      'Bases de datos',
+      'Y mucho más...',
     ],
   },
   techSection: {
-    upperTitle: "Overview",
-    title: "Tech.",
-    body: `As a Full-Stack Developer, I thrive on versatility. My journey in the realm of technology
-          has equipped me with the skills to create comprehensive solutions. From front-end design
-          to back-end development, I navigate the entire spectrum, ensuring that the websites I
-          build are not just functional but also highly efficient.`,
-    callToAction: "Click me",
+    upperTitle: 'Resumen',
+    title: 'Tecnología',
+    body: `Como Desarrollador Full-Stack, me apasiona la versatilidad. Mi viaje en el ámbito de la tecnología
+          me ha equipado con las habilidades para crear soluciones integrales. Desde el diseño front-end
+          hasta el desarrollo back-end, navego por todo el espectro, asegurándome de que los sitios web que
+          construyo no solo sean funcionales, sino también altamente eficientes.`,
+    callToAction: 'Haz clic en mí',
     cards: [
       {
-        title: "Lenguajes",
+        title: 'Lenguajes',
         ul: {
           ready: [
-            { name: "TypeScript", icon: typescriptIcon, alt: "Typescript" },
-            { name: "JavaScript", icon: javascriptIcon, alt: "JavaScript" },
-            { name: "Java", icon: javaIcon, alt: "Java" },
-            { name: "PHP", icon: phpIcon, alt: "PHP" },
+            { name: 'TypeScript', icon: typescriptIcon, alt: 'Typescript' },
+            { name: 'JavaScript', icon: javascriptIcon, alt: 'JavaScript' },
+            { name: 'Java', icon: javaIcon, alt: 'Java' },
+            { name: 'PHP', icon: phpIcon, alt: 'PHP' },
           ],
         },
       },
       {
-        title: "Front-End",
+        title: 'Front-End',
         ul: {
           ready: [
-            { name: "React", icon: reactIcon, alt: "React" },
-            { name: "Tailwind", icon: tailwindIcon, alt: "Tailwind" },
-            { name: "CSS3", icon: cssIcon, alt: "Css" },
-            { name: "Sass", icon: sassIcon, alt: "Sass" },
-            { name: "Bootstrap", icon: bootstrapIcon, alt: "Bootstrap" },
-            { name: "Material UI", icon: materialuiIcon, alt: "Material UI" },
+            { name: 'React', icon: reactIcon, alt: 'React' },
+            { name: 'Tailwind', icon: tailwindIcon, alt: 'Tailwind' },
+            { name: 'CSS3', icon: cssIcon, alt: 'Css' },
+            { name: 'Sass', icon: sassIcon, alt: 'Sass' },
+            { name: 'Bootstrap', icon: bootstrapIcon, alt: 'Bootstrap' },
+            { name: 'Material UI', icon: materialuiIcon, alt: 'Material UI' },
           ],
         },
       },
       {
-        title: "Back-end",
+        title: 'Back-End',
         ul: {
           ready: [
             {
-              name: "Next.js",
+              name: 'Next.js',
               icon: nextjsIcon,
-              alt: "Next js",
-              bg: "white",
+              alt: 'Next js',
+              bg: 'white',
             },
             {
-              name: "Express.js",
+              name: 'Express.js',
               icon: expressIcon,
-              alt: "Express js",
-              bg: "white",
+              alt: 'Express js',
+              bg: 'white',
             },
-            { name: "Node.js", icon: nodeIcon, alt: "Node js" },
-            { name: "PHP", icon: phpIcon, alt: "PHP" },
+            { name: 'Node.js', icon: nodeIcon, alt: 'Node js' },
+            { name: 'PHP', icon: phpIcon, alt: 'PHP' },
             {
-              name: "Linux",
+              name: 'Linux',
               icon: linuxIcon,
-              alt: "linux",
-              bg: "white",
+              alt: 'linux',
+              bg: 'white',
             },
           ],
         },
       },
       {
-        title: "Bases de datos",
+        title: 'Bases de Datos',
         ul: {
           ready: [
-            { name: "MySQL", icon: mysqlIcon, alt: "MySQL" },
-            { name: "MongoDB", icon: mongodbIcon, alt: "MongoDB" },
-            { name: "Mongoose", icon: mongooseIcon, alt: "Mongoose" },
+            { name: 'MySQL', icon: mysqlIcon, alt: 'MySQL' },
+            { name: 'MongoDB', icon: mongodbIcon, alt: 'MongoDB' },
+            { name: 'Mongoose', icon: mongooseIcon, alt: 'Mongoose' },
           ],
         },
       },
     ],
   },
   experienceSection: {
-    uppertitle: "What have I done so far?",
-    title: "Experience.",
-    experiences: [
-      {
-        order: 6,
-        title: "Web Developer for PEP e.V",
-        company_name: "PEP e.V",
+    uppertitle: '¿Qué he hecho hasta ahora?',
+    title: 'Experiencia',
+    profesional: {
+      title: 'Experiencia Profesional',
+      certificationTranslation: 'Explorar Proyecto',
+      experiences: [
+        {
+          order: 2,
+          title: 'Desarrollador Web para PEP e.V',
+          company_name: 'PEP e.V',
+          icon: PEPImg,
+          iconBg: '#383E56',
+          date: 'Diciembre 2023 - Presente',
+          points: [
+            'Aumenté las tasas de donación (5x) implementando una plataforma de pago segura para transacciones sin problemas.',
+            'Creé desde cero la página web oficial de la ONG. Actualmente mejorándola y manteniéndola.',
+            'Desarrollé un sitio multilingüe y responsivo (Alemán, Español, Inglés) con las mejores prácticas de SEO.',
+            'Mejoré la presencia en línea de la organización, aumentando el compromiso de los voluntarios en 3x.',
+          ],
+          certification_url: 'https://www.pepev.org/',
+        },
+        {
+          order: 1,
+          title: 'Desarrollador Web para Chef Bautista',
+          company_name: 'Chef Bautista',
+          date: 'Marzo 2024 - Mayo 2024',
+          points: [
+            'Construí la aplicación web para Chef Bautista (actualmente esperando las traducciones finales del Chef). Con ella, puede publicar directamente los menús actuales y los precios actualizados.',
+            'Implementé una arquitectura limpia para mejorar el mantenimiento del código.',
+            'Desarrollé un sitio multilingüe y responsivo (Francés, Español, Inglés) con las mejores prácticas de SEO.',
+            'Mejoré la presencia en línea de la organización.',
+          ],
+          certification_url: 'https://ingridbautistademo.netlify.app',
+        },
+      ],
+    },
+    qualifications: {
+      title: 'Calificaciones Educativas',
+      certificationTranslation: 'Ver certificación',
+      experiences: [
+        {
+          order: 5,
+          title: 'Grado Superior en Desarrollo de Software',
+          company_name: 'Escuela Técnica Nebrija',
+          certification_url: '',
 
-        icon: PEPImg,
-        iconBg: "#383E56",
-        date: "December 2023 - Present",
-        points: [
-          "Creating a brand-new website from scratch.",
-          "Developing a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.",
-          `Enhancing the organization's online presence.`,
-          "Boosting donation rates and implementing a secure payment platform for seamless transactions.",
-        ],
-      },
+          icon: NebrijaLogo,
+          iconBg: '#383E56',
+          date: 'Octubre 2023 - Presente',
+          points: [
+            'Aprendiendo lo esencial del desarrollo de software.',
+            'Desarrollo y mantenimiento de aplicaciones web usando tecnologías como Java, PHP u otros lenguajes relevantes.',
+            'Desarrollo de aplicaciones multiplataforma: escritorio, web y móvil.',
+            'Desarrollo de aplicaciones seguras y protección de la información.',
+          ],
+        },
+        {
+          order: 4,
+          title: 'Next.js El Framework de React para Producción',
+          company_name: 'Udemy',
 
-      {
-        order: 5,
-        title: "Higher Software Technician Degree",
-        company_name: "Nebrija Technical School",
-        certification_url: "",
+          certification_url:
+            'https://www.udemy.com/certificate/UC-be34cc73-b369-448c-a463-3f7725e7e110/',
+          icon: UdemyLogo,
+          iconBg: '#383E56',
+          date: 'Agosto 2023 - Octubre 2023',
+          points: [
+            'Construcción de aplicaciones web Full-Stack con Next.js y TypeScript.',
+            'Generación de sitios estáticos, generación del lado del servidor, SWR.',
+            'Integración con pagos de PayPal.',
+          ],
+        },
+        {
+          order: 3,
+          title: 'React: De Cero a Experto (Hooks y MERN)',
+          company_name: 'Udemy',
 
-        icon: NebrijaLogo,
-        iconBg: "#383E56",
-        date: "October 2023 - Present",
-        points: [
-          "Learning the core of software development.",
-          "Development and maintenance of web applications using technologies such as Java, PHP, or other relevant languages.",
-          "Development of cross-platform applications: desktop, web and mobile.",
-          "Development of secure applications and protection of information.",
-        ],
-      },
-      {
-        order: 4,
-        title: "Next.js The React Framework for production",
-        company_name: "Udemy",
+          certification_url:
+            'https://www.udemy.com/certificate/UC-c1f827a0-82ba-4f37-affb-f7592a6ccee4/',
+          icon: UdemyLogo,
+          iconBg: '#383E56',
+          date: 'Julio 2023 - Julio 2023',
+          points: [
+            'Aprendiendo React desde cero hasta construir aplicaciones completas con gestión de estado global.',
+            'Hooks, pruebas, JWT, Redux, Mongoose...',
+          ],
+        },
+        {
+          order: 2,
+          title: 'TypeScript: Tu guía completa y manual',
+          company_name: 'Udemy',
 
-        certification_url:
-          "https://www.udemy.com/certificate/UC-be34cc73-b369-448c-a463-3f7725e7e110/",
-        icon: UdemyLogo,
-        iconBg: "#383E56",
-        date: "August 2023 - October 2023",
-        points: [
-          "Building Full-Stack Web Applications with Next.js and TypeScript.",
-          "Static Site Generation, Server Side Generation, SWR.",
-          "Integration with paypal payments.",
-        ],
-      },
-      {
-        order: 3,
-        title: "React: From Zero to Expert (Hooks and MERN)",
-        company_name: "Udemy",
+          certification_url:
+            'https://www.udemy.com/certificate/UC-046682ed-559f-42a0-ac8b-5359562580d7/',
+          icon: UdemyLogo,
+          iconBg: '#383E56',
+          date: 'Abril 2023 - Julio 2023',
+          points: [
+            'Aprendiendo TypeScript para desarrollar aplicaciones web más fáciles de mantener y escalables.',
+          ],
+        },
+        {
+          order: 1,
+          title: '100 Días de Código - Bootcamp de Desarrollo Web 2023',
+          company_name: 'Udemy',
 
-        certification_url:
-          "https://www.udemy.com/certificate/UC-c1f827a0-82ba-4f37-affb-f7592a6ccee4/",
-        icon: UdemyLogo,
-        iconBg: "#383E56",
-        date: "July 2023 - July 2023",
-        points: [
-          "Learning React from scratch until building full applications with global state management.",
-          "Hooks, Testing, JWT, Redux, Mongoose...",
-        ],
-      },
-      {
-        order: 2,
-        title: "TypeScript: Your complete guide and handbook",
-        company_name: "Udemy",
-
-        certification_url:
-          "https://www.udemy.com/certificate/UC-046682ed-559f-42a0-ac8b-5359562580d7/",
-        icon: UdemyLogo,
-        iconBg: "#383E56",
-        date: "April 2023 - July 2023",
-        points: [
-          "Learning TypeScript in order to develop more easy and scalable to mantain web apps.",
-        ],
-      },
-      {
-        order: 1,
-        title: "100 Days of Code - 2023 Web Development Bootcamp",
-        company_name: "Udemy",
-
-        certification_url:
-          "https://www.udemy.com/certificate/UC-d08e5c85-4041-4286-ac6a-d6cac5a907cf/",
-        icon: UdemyLogo,
-        iconBg: "#383E56",
-        date: "November 2022 - March 2023",
-        points: [
-          "Building Full-Stack applications with HTML, Css and JavaScript.",
-          "MVC, Express.js, Git, Github, DOM, Css, MongoDB, REST APIs...",
-        ],
-      },
-    ],
+          certification_url:
+            'https://www.udemy.com/certificate/UC-d08e5c85-4041-4286-ac6a-d6cac5a907cf/',
+          icon: UdemyLogo,
+          iconBg: '#383E56',
+          date: 'Noviembre 2022 - Marzo 2023',
+          points: [
+            'Construcción de aplicaciones Full-Stack con HTML, CSS y JavaScript.',
+            'MVC, Express.js, Git, GitHub, DOM, CSS, MongoDB, APIs REST...',
+          ],
+        },
+      ],
+    },
   },
   projectsSection: {
-    uppertitle: "My Work",
-    title: "Projects.",
-    inProgressTitle: "In development",
-    finishedProyectsTitle: "Finished",
+    uppertitle: 'Mi Trabajo',
+    title: 'Proyectos',
+    inProgressTitle: 'En desarrollo',
+    finishedProyectsTitle: 'Finalizados',
     projects: [
       {
-        name: "www.pepev.org",
-        description: `Creating a brand-new website that allows donors to donate money throught the website,
-        with internationalization in 3 languages and
-        best SEO practices`,
+        name: 'www.pepev.org',
+        description: `Creación de un nuevo sitio web que permite a los donantes donar dinero a través del sitio web,
+        con internacionalización en 3 idiomas y
+        mejores prácticas de SEO`,
         tags: [
           {
-            name: "Fully-Responsive",
-            color: "pink-text-gradient",
+            name: 'Totalmente Responsivo',
+            color: 'pink-text-gradient',
           },
           {
-            name: "TypeScript",
-            color: "blue-text-gradient",
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Next.js",
-            color: "green-text-gradient",
+            name: 'Next.js',
+            color: 'green-text-gradient',
           },
           {
-            name: "React",
-            color: "pink-text-gradient",
+            name: 'React',
+            color: 'pink-text-gradient',
           },
           {
-            name: "RSC",
-            color: "blue-text-gradient",
+            name: 'RSC',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Stripe",
-            color: "green-text-gradient",
+            name: 'Stripe',
+            color: 'green-text-gradient',
           },
           {
-            name: "Tailwind",
-            color: "blue-text-gradient",
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
           },
           {
-            name: "React i18next",
-            color: "pink-text-gradient",
+            name: 'React i18next',
+            color: 'pink-text-gradient',
           },
         ],
         image: PEPImg,
-        webpage_link: "https://www.pepev.org",
+        webpage_link: 'https://www.pepev.org',
       },
       {
-        name: "Tesla landing page",
-        description: `Replica of the Tesla official landing page.`,
+        name: 'Página de destino de Tesla',
+        description: `Réplica de la página de inicio oficial de Tesla.`,
         tags: [
           {
-            name: "Desktop",
-            color: "pink-text-gradient",
+            name: 'Escritorio',
+            color: 'pink-text-gradient',
           },
           {
-            name: "TypeScript",
-            color: "blue-text-gradient",
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Next.js",
-            color: "green-text-gradient",
+            name: 'Next.js',
+            color: 'green-text-gradient',
           },
           {
-            name: "React",
-            color: "pink-text-gradient",
+            name: 'React',
+            color: 'pink-text-gradient',
           },
           {
-            name: "RSC",
-            color: "green-text-gradient",
+            name: 'RSC',
+            color: 'green-text-gradient',
           },
           {
-            name: "Tailwind",
-            color: "blue-text-gradient",
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
           },
         ],
         image: TeslaWebImg,
-        webpage_link: "https://tesla-landing-clone-ebon.vercel.app/",
+        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app/',
         source_code_link:
-          "https://github.com/josemontano1996/tesla-landing-clone",
+          'https://github.com/josemontano1996/tesla-landing-clone',
       },
       {
-        name: "Old Portfolio Webpage",
-        description: `This page you are navigating through. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
-        new App Router.`,
+        name: 'Página de Portafolio Antiguo',
+        description: `Esta página por la que estás navegando. Viene con las mejores prácticas de SEO, internacionalización en 3 idiomas, SSGs y el
+        nuevo App Router.`,
         tags: [
           {
-            name: "Fully-Responsive",
-            color: "green-text-gradient",
+            name: 'Totalmente Responsivo',
+            color: 'green-text-gradient',
           },
           {
-            name: "TypeScript",
-            color: "blue-text-gradient",
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Next.js",
-            color: "pink-text-gradient",
+            name: 'Next.js',
+            color: 'pink-text-gradient',
           },
           {
-            name: "Three.js",
-            color: "blue-text-gradient",
+            name: 'Three.js',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Tailwind",
-            color: "pink-text-gradient",
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
           },
           {
-            name: "React i18next",
-            color: "green-text-gradient",
+            name: 'React i18next',
+            color: 'green-text-gradient',
           },
         ],
         image: OldPorfolioImg,
-        webpage_link: "https://www.jm3.dev",
-        source_code_link: "https://github.com/josemontano1996/my-portfolio",
+        webpage_link: 'https://www.jm3.dev',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {
-        name: "Teslo Shop",
-        description: `Full-Stack clothing e-commerce with paypal integration, that allows users to search and buy clothing. 
-          Developed using Next.js for the front- end and backend, and MongoDB as a database.`,
+        name: 'Teslo Shop',
+        description: `E-commerce de ropa Full-Stack con integración de PayPal, que permite a los usuarios buscar y comprar ropa. 
+          Desarrollado usando Next.js para el front-end y back-end, y MongoDB como base de datos.`,
         tags: [
           {
-            name: "Desktop",
-            color: "green-text-gradient",
+            name: 'Escritorio',
+            color: 'green-text-gradient',
           },
           {
-            name: "Next.js",
-            color: "blue-text-gradient",
+            name: 'Next.js',
+            color: 'blue-text-gradient',
           },
           {
-            name: "NextAuth",
-            color: "pink-text-gradient",
+            name: 'NextAuth',
+            color: 'pink-text-gradient',
           },
           {
-            name: "Paypal",
-            color: "blue-text-gradient",
+            name: 'Paypal',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Mongoose",
-            color: "pink-text-gradient",
+            name: 'Mongoose',
+            color: 'pink-text-gradient',
           },
           {
-            name: "Cloudinary",
-            color: "green-text-gradient",
+            name: 'Cloudinary',
+            color: 'green-text-gradient',
           },
         ],
         image: TesloShopImg,
-        webpage_link: "https://teslo-shop-ruby.vercel.app",
-        source_code_link: "https://github.com/josemontano1996/teslo-shop",
+        webpage_link: 'https://teslo-shop-ruby.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/teslo-shop',
       },
       {
-        name: "Team Calendar",
-        description: `Team calendar webpage made with React, where people from the same team can register 
-        and log in to create events in a shared calendar for better organization, all the user and
-        events data come through this API and are properly handled.`,
+        name: 'Calendario de Equipo',
+        description: `Página web de calendario de equipo hecha con React, donde personas del mismo equipo pueden registrarse 
+        e iniciar sesión para crear eventos en un calendario compartido para una mejor organización. Todos los datos de usuarios y
+        eventos se manejan adecuadamente a través de esta API.`,
         tags: [
           {
-            name: "Desktop",
-            color: "blue-text-gradient",
+            name: 'Escritorio',
+            color: 'blue-text-gradient',
           },
           {
-            name: "React",
-            color: "green-text-gradient",
+            name: 'React',
+            color: 'green-text-gradient',
           },
           {
-            name: "Redux Toolkit",
-            color: "pink-text-gradient",
+            name: 'Redux Toolkit',
+            color: 'pink-text-gradient',
           },
           {
-            name: "Express.js",
-            color: "green-text-gradient",
+            name: 'Express.js',
+            color: 'green-text-gradient',
           },
           {
-            name: "Mongoose",
-            color: "pink-text-gradient",
+            name: 'Mongoose',
+            color: 'pink-text-gradient',
           },
         ],
         image: CalendarpAppImg,
-        webpage_link: "https://react-calendar-app-iota.vercel.app",
+        webpage_link: 'https://react-calendar-app-iota.vercel.app',
         source_code_link:
-          "https://github.com/josemontano1996/react-calendar-app",
+          'https://github.com/josemontano1996/react-calendar-app',
       },
     ],
     inprogress: [
       {
-        name: "Chef Webpage",
-        description: `In development: Private Chef Full-Stack webpage that will be 
-        used for food delivery and events management.`,
+        name: 'Página Web de Chef',
+        description: `En desarrollo: Página web Full-Stack para chef privado que se utilizará para la entrega de alimentos y gestión de eventos.`,
         tags: [
           {
-            name: "Fully-Responsive",
-            color: "pink-text-gradient",
+            name: 'Totalmente Responsivo',
+            color: 'pink-text-gradient',
           },
           {
-            name: "TypeScript",
-            color: "blue-text-gradient",
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
           },
           {
-            name: "Next.js",
-            color: "green-text-gradient",
+            name: 'Next.js',
+            color: 'green-text-gradient',
           },
           {
-            name: "React",
-            color: "pink-text-gradient",
+            name: 'React',
+            color: 'pink-text-gradient',
           },
           {
-            name: "RSC",
-            color: "green-text-gradient",
+            name: 'RSC',
+            color: 'green-text-gradient',
           },
           {
-            name: "Tailwind",
-            color: "blue-text-gradient",
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
           },
           {
-            name: "React i18next",
-            color: "pink-text-gradient",
+            name: 'React i18next',
+            color: 'pink-text-gradient',
           },
         ],
         image: IngridWebpage,
-        webpage_link: "https://ingridbautistademo.netlify.app/",
+        webpage_link: 'https://ingridbautistademo.netlify.app/',
         source_code_link:
-          "https://github.com/josemontano1996/ingridbautista.com",
+          'https://github.com/josemontano1996/ingridbautista.com',
       },
     ],
   },
 };
 
 export const footer: IFooter = {
-  uppertitle: "Would you like to know more about me?",
-  title: "Contact me.",
+  uppertitle: '¿Te gustaría saber más sobre mí?',
+  title: 'Contáctame.',
 };
 
 export const navBar: INavBar = {
-  about: "About",
-  experience: "Experience",
-  projects: "Projects",
-  contact: "Contact",
+  about: 'Sobre mí',
+  experience: 'Experiencia',
+  projects: 'Proyectos',
+  contact: 'Contacto',
 };
 
 export const contactPopUp: IContactPopUp = {
-  upperTitle: "GET IN TOUCH",
-  callToAction: "My Linkedin Account",
-  title: "Contact.",
-  name: "Your name",
-  nameLabel: `What's your name?`,
-  email: "Your Email",
-  emailLabel: `What's your email address`,
-  message: "Your Message",
-  messageLabel: `What do you have to say?`,
-  send: "Send",
-  alertError: "Something went wrong, please try again later.",
-  alertError1: "Name length should have a length of at least 2 letters.",
-  alertError2: "Your email is invalid, check it again please.",
-  alertError3: "The message should be at least 10 letters long.",
-  alertSuccess: "Thank you. Your message was succesfully sent.",
+  upperTitle: 'PONTE EN CONTACTO',
+  callToAction: 'Mi cuenta de LinkedIn',
+  title: 'Contacto.',
+  name: 'Tu nombre',
+  nameLabel: '¿Cuál es tu nombre?',
+  email: 'Tu correo electrónico',
+  emailLabel: '¿Cuál es tu dirección de correo electrónico?',
+  message: 'Tu mensaje',
+  messageLabel: '¿Qué tienes que decir?',
+  send: 'Enviar',
+  alertError: 'Algo salió mal, por favor intenta de nuevo más tarde.',
+  alertError1: 'El nombre debe tener al menos 2 letras.',
+  alertError2: 'Tu correo electrónico es inválido, revísalo por favor.',
+  alertError3: 'El mensaje debe tener al menos 10 letras.',
+  alertSuccess: 'Gracias. Tu mensaje fue enviado exitosamente.',
 };

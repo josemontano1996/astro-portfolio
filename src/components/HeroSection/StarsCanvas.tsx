@@ -1,12 +1,12 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
-import * as random from 'maath/random';
 import { Suspense, useRef, useState } from 'react';
+import { randomInSphere } from '@/lib/random';
 
 const Stars = (props: any) => {
   const ref = useRef<any>(); // Define the type of the ref
 
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const [sphere] = useState(() => randomInSphere(new Float32Array(5000), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     // Check if ref.current exists before accessing its properties
