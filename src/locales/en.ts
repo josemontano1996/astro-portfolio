@@ -1,10 +1,4 @@
 import type { IFooter, IHomePage } from '@/interfaces/home-page';
-import {
-  DatabaseIcon,
-  LaptopIcon,
-  ServerIcon,
-  SquareCodeIcon,
-} from 'lucide-react';
 
 import {
   CalendarpAppImg,
@@ -148,7 +142,7 @@ export const homePage: IHomePage = {
       certificationTranslation: 'Explore Project',
       experiences: [
         {
-          order: 6,
+          order: 2,
           title: 'Web Developer for PEP e.V',
           company_name: 'PEP e.V',
           icon: PEPImg,
@@ -161,6 +155,19 @@ export const homePage: IHomePage = {
             `Enhanced the organization's online presence, volunteers engagement incrememented by 3x.`,
           ],
           certification_url: 'https://www.pepev.org/',
+        },
+        {
+          order: 1,
+          title: 'Web Developer for Chef Bautista',
+          company_name: 'Chef Bautista',
+          date: 'March 2024 - May 2024',
+          points: [
+            'Builded the web app for Chef Bautista (currently waiting for the final translations from the Chef) With it she can directly post the menus she currently has as well as the updated prices',
+            'Implemented clean architecture in order to improve mantainability of the codebase',
+            'Developed a responsive, multilingual site (French, Spanish, English) with top-notch SEO practices.',
+            `Enhanced the organization's online presence.`,
+          ],
+          certification_url: 'https://ingridbautistademo.netlify.app',
         },
       ],
     },

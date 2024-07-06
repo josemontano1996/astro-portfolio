@@ -71,8 +71,8 @@ export interface IExperienceElement {
   title: string;
   company_name: string;
   certification_url?: string;
-  icon: any;
-  iconBg: string;
+  icon?: any;
+  iconBg?: string;
   date: string;
   points: string[];
 }
