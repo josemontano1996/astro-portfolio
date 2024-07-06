@@ -1,31 +1,18 @@
 ---
 import { VerticalTimelineComponent } from './VerticalTimelineComponent';
-
-const experiences = [
-  {
-    order: 6,
-    title: 'Web Developer',
-    company_name: 'PEP e.V',
-
-    icon: 'PEP',
-    iconBg: '#383E56',
-    date: '12/2023 - Present',
-    points: [
-      'Creating a brand-new website from scratch.',
-      'Developing a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
-      `Enhancing the organization's online presence.`,
-      'Boosting donation rates and implementing a secure payment platform for seamless transactions.',
-    ],
-  },
-];
+import type { IExperienceSection } from '@/interfaces/home-page';
+interface Props {
+  t: IExperienceSection;
+}
+const { t } = Astro.props;
 ---
 
 <section id='experience'>
   <div>
     <h5 class='sm:text-xl text-lg text-secondary uppercase tracking-wider'>
-      WHAT HAVE I DONE SO FAR?
+     {t.uppertitle}
     </h5>
-    <h2 class='text-white font-black md:text-6xl sm:text-5xl text-4xl my-4'>Experience.</h2>
+    <h2 class='text-white font-black md:text-6xl sm:text-5xl text-4xl my-4'>{t.title}</h2>
   </div>
-  <VerticalTimelineComponent experiences={experiences} client:visible />
+  <VerticalTimelineComponent profesionalExp={t.profesional} qualifications={t.qualifications} client:visible />
 </section>

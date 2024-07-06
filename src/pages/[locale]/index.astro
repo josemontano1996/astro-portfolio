@@ -32,7 +32,7 @@ const { metadata, heroSection, aboutSection, techSection, experienceSection } = 
       <TechSection t={techSection}/>
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='fade-in' client:load>
-      <ExperienceSection />
+      <ExperienceSection t={experienceSection} />
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='slide-in' client:load>
       <ProjectsSection />

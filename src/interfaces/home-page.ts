@@ -56,6 +56,12 @@ export interface ITechElement {
 export interface IExperienceSection {
   uppertitle: string;
   title: string;
+  profesional: IExperienceSubsection;
+  qualifications: IExperienceSubsection;
+}
+
+export interface IExperienceSubsection {
+  title: string;
   experiences: IExperienceElement[];
 }
 

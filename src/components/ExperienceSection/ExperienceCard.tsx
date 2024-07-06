@@ -16,7 +16,7 @@ export const ExperienceCard = ({
         <p>{experience.date}</p>
       </div>
       <div>
-        <p className="text-muted">Company: {experience.company_name}</p>
+        <p className="text-muted">{experience.company_name}</p>
       </div>
       {experience.certification_url && (
         <a
