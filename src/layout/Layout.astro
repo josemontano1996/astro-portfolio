@@ -33,14 +33,14 @@ const t = loadTranslations(locale as string);
     <meta property='og:type' content='website' />
     <meta property='og:url' content={Astro.url} />
     <meta property='og:image' content={ogImg} />
-
+    
     <title>{title}</title>
-     <ViewTransitions />
+    <ViewTransitions />
   </head>
-  <body class='bg-background text-foreground md:px-16 px-6'>
+  <body class='bg-background text-foreground'>
     <ContactForm t={t.contactPopUp} client:load/>
     <NavBar t={t.navBar}/>
-    <div>
+    <div class="md:px-16 px-6">
       <slot />
     </div>
   </body>
