@@ -5,11 +5,13 @@ type Props = {
 };
 export const VerticalTimelineSqueleton = ({ children }: Props) => {
   return (
-    <li className={cn('max-w-[90vw] border-l-2', `border-accent`)}>
-      <div className="flex-start md:flex">
+    <li
+      className={cn('flex max-w-[90vw] flex-col items-center justify-center lg:block')}
+    >
+      <div className="flex-start md:flex md:border-l-2 md:border-accent">
         <div
           className={cn(
-            `-ml-3.5 flex h-6 w-6 items-center justify-center rounded-full bg-accent`,
+            `-ml-2 hidden h-4 w-4 items-center justify-center rounded-full bg-accent md:flex`,
           )}
         >
           <svg

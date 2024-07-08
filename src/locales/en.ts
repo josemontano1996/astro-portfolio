@@ -496,7 +496,9 @@ export const navBar: INavBar = {
 
 export const contactPopUp: IContactPopUp = {
   upperTitle: 'GET IN TOUCH',
-  callToAction: 'My Linkedin Account',
+  linkedinText: 'Linkedin',
+  githubText: 'Github',
+  emailText: 'Email',
   title: 'Contact.',
   name: 'Your name',
   nameLabel: `What's your name?`,

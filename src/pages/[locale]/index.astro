@@ -8,6 +8,7 @@ import TechSection from '@/components/TechSection/TechSection.astro';
 import ExperienceSection from '@/components/ExperienceSection/ExperienceSection.astro';
 import ProjectsSection from '@/components/ProjectsSection/ProjectsSection.astro';
 import loadTranslations from '@/lib/loadTranslations';
+import Footer from '@/components/Footer/Footer.astro';
 
 
 export const getStaticPaths = () => {
@@ -19,11 +20,11 @@ const { locale } = Astro.params;
 
 const t = loadTranslations(locale);
 
-const { metadata, heroSection, aboutSection, techSection, experienceSection, projectsSection } = t.homePage;
+const { metadata, heroSection, aboutSection, techSection, experienceSection, projectsSection, } = t.homePage;
+const  footer  = t.footer
 ---
 
 <Layout description={metadata.description} ogImg={metadata.og.image} title={metadata.title}>
-<!--   TODO: Add contact component -->
   <div class='flex flex-col gap-8'>
     <HeroSection t={heroSection} />
     <IntersectionObserverComponent animation='fade-in' client:load>
@@ -38,5 +39,9 @@ const { metadata, heroSection, aboutSection, techSection, experienceSection, pro
     <IntersectionObserverComponent animation='slide-in'client:load>
       <ProjectsSection  t={projectsSection}/>
     </IntersectionObserverComponent>
+    <IntersectionObserverComponent animation='fade-in'client:load>
+      <Footer  t={footer}/>
+    </IntersectionObserverComponent>
   </div>
+
 </Layout>

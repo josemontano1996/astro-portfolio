@@ -1,4 +1,11 @@
+import { useStore } from '@nanostores/react';
+import { isContactDialogOpen } from '@/store/appStore';
+
 export const ContactButton = ({ t }: { t: string }) => {
-  //TODO: Implement toggleContactPopUp
-  return <button /* onClick={toggleContactPopUp} */>{t}</button>;
+  const $isContactDialogOpen = useStore(isContactDialogOpen);
+
+  const toggleContactPopUp = () =>
+    isContactDialogOpen.set(!$isContactDialogOpen);
+
+  return <button onClick={toggleContactPopUp}>{t}</button>;
 };

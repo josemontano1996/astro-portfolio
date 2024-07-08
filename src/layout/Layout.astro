@@ -2,6 +2,8 @@
 import '@fontsource-variable/inter';
 import '@/styles/globals.css';
 import NavBar from '@/components/NavBar/NavBar.astro';
+import { ContactForm} from "@/components/Contact/ContactForm";
+import loadTranslations from '@/lib/loadTranslations';
 
 interface Props {
   title: string;
@@ -12,6 +14,8 @@ interface Props {
 const { locale } = Astro.params;
 
 const { title, description, ogImg } = Astro.props;
+
+const t = loadTranslations(locale as string);
 ---
 
 <!doctype html>
@@ -32,7 +36,8 @@ const { title, description, ogImg } = Astro.props;
     <title>{title}</title>
   </head>
   <body class='bg-background text-foreground md:px-16 px-6'>
-    <NavBar />
+    <ContactForm t={t.contactPopUp} client:load/>
+    <NavBar t={t.navBar}/>
     <div>
       <slot />
     </div>
