@@ -5,12 +5,12 @@ import { supportedLocales } from './src/consts/locales';
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: { '/': '/en' },
   i18n: {
     defaultLocale: 'en',
     locales: supportedLocales,
     routing: {
       prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
     },
     fallbackLocale: 'en',
   },
