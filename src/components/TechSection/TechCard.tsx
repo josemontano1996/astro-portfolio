@@ -39,7 +39,7 @@ export const TechCard = ({ cards }: Props) => {
       </TabsList>
       <div className="mt-3 h-[200px]">
         <TabsContent value="languages">
-          <ul className="space-y-2 text-xl">
+          <ul className="space-y-3 text-xl">
             {languages.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
                 <img src={li.icon} height={30} width={30} alt={li.alt} />
@@ -49,7 +49,7 @@ export const TechCard = ({ cards }: Props) => {
           </ul>
         </TabsContent>
         <TabsContent value="front">
-          <ul className="space-y-2 text-xl">
+          <ul className="space-y-3 text-xl">
             {frontEnd.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
                 <img src={li.icon} height={30} width={30} alt={li.alt} />
@@ -59,7 +59,7 @@ export const TechCard = ({ cards }: Props) => {
           </ul>
         </TabsContent>
         <TabsContent value="back">
-          <ul className="space-y-2 text-xl">
+          <ul className="space-y-3 text-xl">
             {backEnd.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
                 <img src={li.icon} height={30} width={30} alt={li.alt} />
@@ -69,7 +69,7 @@ export const TechCard = ({ cards }: Props) => {
           </ul>
         </TabsContent>
         <TabsContent value="database">
-          <ul className="space-y-2 text-xl">
+          <ul className="space-y-3 text-xl">
             {databases.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
                 <img src={li.icon} height={30} width={30} alt={li.alt} />

@@ -22,7 +22,7 @@ const t = loadTranslations(locale);
 const { metadata, heroSection, aboutSection, techSection, experienceSection, projectsSection } = t.homePage;
 ---
 
-<Layout description='Home page' ogImg={metadata.og.image} title='Home page'>
+<Layout description={metadata.description} ogImg={metadata.og.image} title={metadata.title}>
 <!--   TODO: Add contact component -->
   <div class='flex flex-col gap-8'>
     <HeroSection t={heroSection} />
