@@ -332,7 +332,7 @@ export const homePage: IHomePage = {
         ],
         image: OldPorfolioImg,
         webpage_link: 'https://www.jm3.dev',
-        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+        source_code_link: 'https://github.com/josemontano1996/astro-portfolio',
       },
       {
         name: 'Old Portfolio Webpage',
@@ -365,7 +365,7 @@ export const homePage: IHomePage = {
           },
         ],
         image: OldPorfolioImg,
-        webpage_link: 'https://www.jm3.dev',
+        webpage_link: 'https://jm3development.vercel.app',
         source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {
