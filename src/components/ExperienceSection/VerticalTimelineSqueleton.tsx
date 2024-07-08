@@ -31,7 +31,7 @@ export const VerticalTimelineSqueleton = ({ children }: Props) => {
         </div>
         <article
           className={cn(
-            'mb-10 md:ml-6 block w-[600px] max-w-[85vw] rounded-lg bg-gray-100 p-6 text-black shadow-lg',
+            'mb-4 md:ml-6 block w-[600px] max-w-[85vw] rounded-lg bg-gray-100 p-6 text-black shadow-lg',
           )}
         >
           {children}

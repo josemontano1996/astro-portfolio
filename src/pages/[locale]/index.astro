@@ -30,14 +30,14 @@ const  footer  = t.footer
     <IntersectionObserverComponent animation='fade-in' client:load>
       <AboutSection t={aboutSection} />
     </IntersectionObserverComponent>
+    <IntersectionObserverComponent animation='slide-in' client:load>
       <TechSection t={techSection}/>
-    <IntersectionObserverComponent animation='fade-in' client:load>
-      <ExperienceSection t={experienceSection} />
     </IntersectionObserverComponent>
-    <IntersectionObserverComponent animation='slide-in'client:load>
+      <ExperienceSection t={experienceSection} />
+    <IntersectionObserverComponent animation='fade-in'client:load>
       <ProjectsSection  t={projectsSection}/>
     </IntersectionObserverComponent>
-    <IntersectionObserverComponent animation='fade-in'client:load>
+    <IntersectionObserverComponent animation='slide-in'client:load>
       <Footer  t={footer}/>
     </IntersectionObserverComponent>
   </div>

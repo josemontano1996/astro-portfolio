@@ -79,80 +79,79 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
 
   return (
     $isContactDialogOpen && (
-      <section className="fixed left-1/2 top-1/2 z-50 h-screen w-screen -translate-x-1/2 -translate-y-1/2 transform overflow-y-auto rounded-md bg-secondary-foreground p-6 fade-in">
-        <div className="bg-black-100 relative mx-auto mt-[10vh] min-h-[570px] rounded-2xl p-8 lg:max-h-[80vh] lg:max-w-[800px]">
-          <button>
-            <X
-              className="absolute right-6 top-4 h-[28px] w-[28px] cursor-pointer object-contain"
-              onClick={() => isContactDialogOpen.set(false)}
-            />
-          </button>
-
-          <div>
-            <p className="text-[14px] uppercase tracking-wider text-secondary sm:text-[18px]">
-              {t.upperTitle}
-            </p>
-            <div className="flex items-center gap-8">
-              <LinkedinLink text={t.linkedinText} />
-
-              <GithubLink text={t.githubText} />
-              <EmailLink text={t.emailText} />
-            </div>
-          </div>
-          <h3 className="xs:text-[40px] text-[30px] font-black text-white sm:text-[50px] md:text-[60px]">
-            {t.title}
-          </h3>
-
-          <form
-            onSubmit={handleSubmit}
-            className="mt-6 gap-8 sm:grid sm:grid-cols-2"
-          >
-            <div>
-              <label className="flex flex-col">
-                <span className="mb-4 font-medium text-white">{t.name}</span>
-                <input
-                  type="text"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder={t.nameLabel}
-                  className="rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
-                />
-              </label>
-              <label className="my-4 flex flex-col">
-                <span className="mb-4 font-medium text-white">{t.email}</span>
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder={t.emailLabel}
-                  className="rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
-                />
-              </label>
-            </div>
-            <label className="flex flex-col">
-              <span className="mb-4 font-medium text-white">{t.message}</span>
-              <textarea
-                rows={5}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder={t.messageLabel}
-                className="resize-none overflow-y-auto rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
-              />
-            </label>
-
-            <button
-              type="submit"
-              className="mt-4 w-fit rounded-xl bg-primary px-8 py-3 font-bold text-secondary"
-            >
-              {loading ? '...' : t.send}
+      <div className="relative left-0 top-0">
+        <section className="fixed left-0 top-0 z-50 h-screen w-screen transform overflow-y-auto bg-secondary-foreground p-6 fade-in">
+          <div className="relative mx-auto min-h-[570px] rounded-2xl p-8 lg:max-h-[80vh] lg:max-w-[800px]">
+            <button className="right-6 cursor-pointer absolute top-8 object-contain">
+              <X onClick={() => isContactDialogOpen.set(false)} />
             </button>
-          </form>
-        </div>
-        <StarsCanvas />
-      </section>
+
+            <div>
+              <div className="flex items-center space-x-4">
+                <p className="text-sm uppercase tracking-wider text-secondary sm:text-lg">
+                  {t.upperTitle}
+                </p>
+                <LinkedinLink text={t.linkedinText} />
+                <GithubLink text={t.githubText} />
+                <EmailLink text={t.emailText} />
+              </div>
+            </div>
+            <h3 className="xs:text-[40px] text-[30px] mt-6 mb-4 font-black text-white sm:text-[50px] md:text-[60px]">
+              {t.title}
+            </h3>
+
+            <form
+              onSubmit={handleSubmit}
+              className="gap-8 sm:grid sm:grid-cols-2"
+            >
+              <div>
+                <label className="flex flex-col">
+                  <span className="mb-4 font-medium text-white">{t.name}</span>
+                  <input
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    placeholder={t.nameLabel}
+                    className="rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
+                  />
+                </label>
+                <label className="my-4 flex flex-col">
+                  <span className="mb-4 font-medium text-white">{t.email}</span>
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder={t.emailLabel}
+                    className="rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
+                  />
+                </label>
+              </div>
+              <label className="flex flex-col">
+                <span className="mb-4 font-medium text-white">{t.message}</span>
+                <textarea
+                  rows={5}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder={t.messageLabel}
+                  className="resize-none overflow-y-auto rounded-lg border-none px-6 py-4 font-medium text-black outline-none placeholder:text-secondary"
+                />
+              </label>
+
+              <button
+                type="submit"
+                className="mt-4 w-fit rounded-xl bg-primary px-8 py-3 font-bold text-secondary"
+              >
+                {loading ? '...' : t.send}
+              </button>
+            </form>
+          </div>
+
+          <StarsCanvas />
+        </section>
+      </div>
     )
   );
 };
