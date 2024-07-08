@@ -38,7 +38,7 @@ const t = loadTranslations(locale as string);
     <ViewTransitions />
   </head>
   <body class='bg-background text-foreground'>
-    <ContactForm t={t.contactPopUp} client:visible/>
+    <ContactForm t={t.contactPopUp} client:load/>
     <NavBar t={t.navBar}/>
     <div class="md:px-16 px-6">
       <slot />
