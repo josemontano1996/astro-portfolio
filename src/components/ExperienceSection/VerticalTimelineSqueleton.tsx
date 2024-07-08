@@ -8,7 +8,7 @@ export const VerticalTimelineSqueleton = ({ children }: Props) => {
     <li
       className={cn('flex max-w-[90vw] flex-col items-center justify-center lg:block')}
     >
-      <div className="flex-start md:flex md:border-l-2 md:border-accent">
+      <div className="md:flex md:border-l-2 md:border-accent">
         <div
           className={cn(
             `-ml-2 hidden h-4 w-4 items-center justify-center rounded-full bg-accent md:flex`,
@@ -31,7 +31,7 @@ export const VerticalTimelineSqueleton = ({ children }: Props) => {
         </div>
         <article
           className={cn(
-            'mb-10 ml-6 block w-[600px] max-w-[85vw] rounded-lg bg-gray-100 p-6 text-black shadow-lg',
+            'mb-10 md:ml-6 block w-[600px] max-w-[85vw] rounded-lg bg-gray-100 p-6 text-black shadow-lg',
           )}
         >
           {children}

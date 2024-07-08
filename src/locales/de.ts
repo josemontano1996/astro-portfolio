@@ -32,52 +32,48 @@ import {
   linuxIcon,
 } from 'public/icons/icon-src';
 
-
 export const homePage: IHomePage = {
   metadata: {
-    title: 'jm3 - Full Stack Web Developer Portfolio',
-    description: `Willkommen in meinem Portfolio! Ich bin ein Full-Stack-Entwickler, der sich auf
-    Webentwicklung, Anwendungen und Systeme spezialisiert hat. Schauen Sie sich meine Projekte und Erfahrungen
-    in Technologien wie TypeScript, JavaScript, React, Node.js und mehr an.`,
+    title: 'jm3 - Fachtechniker für die Entwicklung von Webanwendungen',
+    description: `Willkommen auf meinem Portfolio! Ich bin ein Fachtechniker für die Entwicklung von Webanwendungen. Ich nutze Anwendungen und Systeme mit Programmierprinzipien und -werkzeugen wie Java, TypeScript, React, Node.js und vielem mehr.`,
     og: {
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
       url: import.meta.env.PUBLIC_WEB_URL,
     },
   },
-
   heroSection: {
-    title: 'Eine Welt voller Lösungen in greifbarer Nähe',
-    subtitle: 'Der Webentwickler, den Sie suchen, für die Lösungen, die Sie benötigen.',
+    title: 'Eine Welt voller Lösungen in Ihrer Reichweite',
+    subtitle:
+      'Der Webentwickler, den Sie brauchen, für die Lösungen, die Sie suchen.',
     callToAction: 'Mehr entdecken',
   },
   aboutSection: {
     title: 'Hallo, ich bin',
     subtitle:
-      'Ich entwickle die Full-Stack-Webanwendungen, die Ihr Unternehmen benötigt.',
+      'Ich entwickle die Webanwendungen, die Ihr Unternehmen braucht. Ich bin ein Full-Stack-Entwickler mit Leidenschaft für die Erstellung umfassender Lösungen.',
     ul: [
-      'Beste SEO-Praktiken',
-      'Internationalisierung',
-      'Responsives Design',
-      'Authentifizierung',
+      'Client-seitige Entwicklung',
+      'Server',
       'Datenbanken',
-      'Und vieles mehr...',
+      'Webanwendungen',
+      'E-Commerce',
+      'Internationalisierung',
+      'Architekturmuster',
+      'Best Practices für sauberen Code',
     ],
   },
   techSection: {
-    upperTitle: 'Überblick',
-    title: 'Technik.',
-    body: `Als Full-Stack-Entwickler gedeihe ich in Vielseitigkeit. Meine Reise im Bereich der Technologie
-          hat mich mit den Fähigkeiten ausgestattet, umfassende Lösungen zu schaffen. Vom Front-End-Design
-          bis zur Back-End-Entwicklung navigiere ich das gesamte Spektrum und stelle sicher, dass die von mir
-          erstellten Websites nicht nur funktional, sondern auch hoch effizient sind.`,
+    upperTitle: 'Übersicht',
+    title: 'Technologie.',
+    body: `Als Fachtechniker für die Entwicklung von Webanwendungen bin ich auf Vielseitigkeit angewiesen. Meine Reise in der Welt der Technologie hat mich mit den Fähigkeiten ausgestattet, umfassende Lösungen zu schaffen. Vom Design der Front-End bis zur Entwicklung der Back-End navigiere ich durch das gesamte Spektrum, um sicherzustellen, dass die von mir erstellten Websites nicht nur funktional, sondern auch höchst effizient sind.`,
     callToAction: 'Klick mich',
     cards: [
       {
-        title: 'Sprachen',
+        title: 'Programmiersprachen',
         ul: {
           ready: [
-            { name: 'TypeScript', icon: typescriptIcon, alt: 'Typescript' },
+            { name: 'TypeScript', icon: typescriptIcon, alt: 'TypeScript' },
             { name: 'JavaScript', icon: javascriptIcon, alt: 'JavaScript' },
             { name: 'Java', icon: javaIcon, alt: 'Java' },
             { name: 'PHP', icon: phpIcon, alt: 'PHP' },
@@ -104,16 +100,16 @@ export const homePage: IHomePage = {
             {
               name: 'Next.js',
               icon: nextjsIcon,
-              alt: 'Next js',
+              alt: 'Next.js',
               bg: 'white',
             },
             {
               name: 'Express.js',
               icon: expressIcon,
-              alt: 'Express js',
+              alt: 'Express.js',
               bg: 'white',
             },
-            { name: 'Node.js', icon: nodeIcon, alt: 'Node js' },
+            { name: 'Node.js', icon: nodeIcon, alt: 'Node.js' },
             { name: 'PHP', icon: phpIcon, alt: 'PHP' },
             {
               name: 'Linux',
@@ -139,7 +135,7 @@ export const homePage: IHomePage = {
   experienceSection: {
     uppertitle: 'Was habe ich bisher gemacht?',
     title: 'Erfahrung.',
-    profesional: {
+    professional: {
       title: 'Berufserfahrung',
       certificationTranslation: 'Projekt erkunden',
       experiences: [
@@ -149,12 +145,12 @@ export const homePage: IHomePage = {
           company_name: 'PEP e.V',
           icon: PEPImg,
           iconBg: '#383E56',
-          date: 'Dezember 2023 - Gegenwart',
+          date: 'Dezember 2023 - heute',
           points: [
-            'Erhöhte Spendensätze (5x) durch die Implementierung einer sicheren Zahlungsplattform für nahtlose Transaktionen.',
-            'Erstellung der offiziellen ONG-Webseite von Grund auf. Derzeit Verbesserung und Wartung.',
-            'Entwicklung einer responsiven, mehrsprachigen Seite (Deutsch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
-            'Verbesserung der Online-Präsenz der Organisation, Engagement der Freiwilligen um das 3-fache erhöht.',
+            'Erhöhte Spendenraten (5x) durch die Implementierung einer sicheren Zahlungsplattform für reibungslose Transaktionen.',
+            'Erstellung der offiziellen Webseite der Organisation von Grund auf. Derzeitige Verbesserung und Wartung.',
+            'Entwicklung einer responsiven, mehrsprachigen Website (Deutsch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
+            'Verbesserung der Online-Präsenz der Organisation, Steigerung des Engagements der Freiwilligen um das 3-fache.',
           ],
           certification_url: 'https://www.pepev.org/',
         },
@@ -164,9 +160,9 @@ export const homePage: IHomePage = {
           company_name: 'Chef Bautista',
           date: 'März 2024 - Mai 2024',
           points: [
-            'Erstellung der Web-App für Chef Bautista (derzeit warten auf die endgültigen Übersetzungen vom Chef). Damit kann sie direkt die aktuellen Menüs sowie die aktualisierten Preise veröffentlichen.',
-            'Implementierung einer sauberen Architektur zur Verbesserung der Wartbarkeit des Codes.',
-            'Entwicklung einer responsiven, mehrsprachigen Seite (Französisch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
+            'Erstellung der Webanwendung für Chef Bautista (derzeit warten auf die endgültigen Übersetzungen der Chefköchin). Sie kann direkt die Speisekarten veröffentlichen, die sie derzeit hat, sowie die aktualisierten Preise.',
+            'Implementierung einer sauberen Architektur zur Verbesserung der Wartbarkeit der Codebasis.',
+            'Entwicklung einer responsiven, mehrsprachigen Website (Französisch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
             'Verbesserung der Online-Präsenz der Organisation.',
           ],
           certification_url: 'https://ingridbautistademo.netlify.app',
@@ -174,28 +170,28 @@ export const homePage: IHomePage = {
       ],
     },
     qualifications: {
-      title: 'Bildungsqualifikationen',
-      certificationTranslation: 'Zertifikat ansehen',
+      title: 'Ausbildungsqualifikationen',
+      certificationTranslation: 'Zertifizierung anzeigen',
       experiences: [
         {
           order: 5,
-          title: 'Höherer Abschluss als Softwaretechniker',
+          title: 'Höhere Softwaretechniker-Ausbildung',
           company_name: 'Nebrija Technical School',
           certification_url: '',
 
           icon: NebrijaLogo,
           iconBg: '#383E56',
-          date: 'Oktober 2023 - Gegenwart',
+          date: 'Oktober 2023 - heute',
           points: [
-            'Erlernen der Grundlagen der Softwareentwicklung.',
-            'Entwicklung und Wartung von Webanwendungen mit Technologien wie Java, PHP oder anderen relevanten Sprachen.',
-            'Entwicklung plattformübergreifender Anwendungen: Desktop, Web und Mobil.',
+            'Erlernen des Kerns der Softwareentwicklung.',
+            'Entwicklung und Wartung von Webanwendungen unter Verwendung von Technologien wie Java, PHP oder anderen relevanten Sprachen.',
+            'Entwicklung von plattformübergreifenden Anwendungen: Desktop, Web und Mobile.',
             'Entwicklung sicherer Anwendungen und Schutz von Informationen.',
           ],
         },
         {
           order: 4,
-          title: 'Next.js Das React-Framework für die Produktion',
+          title: 'Next.js - Das React Framework für die Produktion',
           company_name: 'Udemy',
 
           certification_url:
@@ -205,13 +201,13 @@ export const homePage: IHomePage = {
           date: 'August 2023 - Oktober 2023',
           points: [
             'Erstellung von Full-Stack-Webanwendungen mit Next.js und TypeScript.',
-            'Static Site Generation, Server Side Generation, SWR.',
-            'Integration mit Paypal-Zahlungen.',
+            'Statische Seitenerzeugung, serverseitige Generierung, SWR.',
+            'Integration mit PayPal-Zahlungen.',
           ],
         },
         {
           order: 3,
-          title: 'React: Vom Anfänger zum Experten (Hooks und MERN)',
+          title: 'React: Von Null zum Experten (Hooks und MERN)',
           company_name: 'Udemy',
 
           certification_url:
@@ -220,7 +216,7 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'Juli 2023 - Juli 2023',
           points: [
-            'Erlernen von React von Grund auf bis hin zum Erstellen vollständiger Anwendungen mit globalem Zustandsmanagement.',
+            'Lernen von React von Grund auf bis zur Entwicklung vollständiger Anwendungen mit globalem Zustandsmanagement.',
             'Hooks, Testing, JWT, Redux, Mongoose...',
           ],
         },
@@ -235,12 +231,12 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'April 2023 - Juli 2023',
           points: [
-            'Erlernen von TypeScript, um leichter zu entwickelnde und wartbare Web-Apps zu erstellen.',
+            'Lernen von TypeScript, um einfacher wartbare Webanwendungen zu entwickeln.',
           ],
         },
         {
           order: 1,
-          title: '100 Tage Code - 2023 Webentwicklungs-Bootcamp',
+          title: '100 Tage Code - 2023 Webentwicklung Bootcamp',
           company_name: 'Udemy',
 
           certification_url:
@@ -249,8 +245,8 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'November 2022 - März 2023',
           points: [
-            'Erstellung von Full-Stack-Anwendungen mit HTML, CSS und JavaScript.',
-            'MVC, Express.js, Git, GitHub, DOM, CSS, MongoDB, REST-APIs...',
+            'Entwicklung von Full-Stack-Anwendungen mit HTML, CSS und JavaScript.',
+            'MVC, Express.js, Git, Github, DOM, CSS, MongoDB, REST-APIs...',
           ],
         },
       ],
@@ -264,9 +260,7 @@ export const homePage: IHomePage = {
     projects: [
       {
         name: 'www.pepev.org',
-        description: `Erstellung einer brandneuen Website, die es Spendern ermöglicht, über die Website Geld zu spenden,
-        mit Internationalisierung in 3 Sprachen und
-        besten SEO-Praktiken`,
+        description: `Erstellung einer neuen Website für Spenden, mit Internationalisierung in 3 Sprachen und besten SEO-Praktiken.`,
         tags: [
           {
             name: 'Vollständig responsiv',
@@ -305,12 +299,12 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.pepev.org',
       },
       {
-        name: 'Tesla-Landingpage',
-        description: `Nachbildung der offiziellen Tesla-Landingpage.`,
+        name: 'Astro Portfolio Webseite',
+        description: `Die neu migrierte Astro-Portfolio für verbesserte Leistung. Es ist die Webseite, die Sie gerade besuchen.`,
         tags: [
           {
-            name: 'Desktop',
-            color: 'pink-text-gradient',
+            name: 'Vollständig responsiv',
+            color: 'green-text-gradient',
           },
           {
             name: 'TypeScript',
@@ -318,30 +312,28 @@ export const homePage: IHomePage = {
           },
           {
             name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
             color: 'pink-text-gradient',
           },
           {
-            name: 'RSC',
-            color: 'green-text-gradient',
+            name: 'Three.js',
+            color: 'blue-text-gradient',
           },
           {
             name: 'Tailwind',
-            color: 'blue-text-gradient',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
           },
         ],
-        image: TeslaWebImg,
-        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app/',
-        source_code_link:
-          'https://github.com/josemontano1996/tesla-landing-clone',
+        image: OldPorfolioImg,
+        webpage_link: 'https://www.jm3.dev',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {
-        name: 'Alte Portfolio-Webseite',
-        description: `Diese Seite, auf der Sie gerade surfen. Sie kommt mit besten SEO-Praktiken, Internationalisierung in 3 Sprachen, SSGs und dem
-        neuen App-Router.`,
+        name: 'Alte Portfolio Webseite',
+        description: `Alte Portfolio-Website. Das Design ist ziemlich ähnlich wie das aktuelle Portfolio.`,
         tags: [
           {
             name: 'Vollständig responsiv',
@@ -374,8 +366,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Teslo Shop',
-        description: `Full-Stack-Kleidungse-Commerce mit Paypal-Integration, das es Benutzern ermöglicht, Kleidung zu suchen und zu kaufen. 
-          Entwickelt mit Next.js für Front-End und Back-End und MongoDB als Datenbank.`,
+        description: `Full-Stack Bekleidungs-E-Commerce mit PayPal-Integration, das es Benutzern ermöglicht, Kleidung zu suchen und zu kaufen.`,
         tags: [
           {
             name: 'Desktop',
@@ -390,7 +381,7 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'Paypal',
+            name: 'PayPal',
             color: 'blue-text-gradient',
           },
           {
@@ -407,10 +398,42 @@ export const homePage: IHomePage = {
         source_code_link: 'https://github.com/josemontano1996/teslo-shop',
       },
       {
-        name: 'Team-Kalender',
-        description: `Team-Kalender-Webseite, erstellt mit React, auf der sich Personen aus demselben Team registrieren 
-        und anmelden können, um Ereignisse in einem gemeinsamen Kalender für eine bessere Organisation zu erstellen. Alle Benutzer- und
-        Ereignisdaten kommen durch diese API und werden ordnungsgemäß verarbeitet.`,
+        name: 'Tesla Landing Page',
+        description: `Replik der offiziellen Tesla Landing Page.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+        ],
+        image: TeslaWebImg,
+        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app/',
+        source_code_link:
+          'https://github.com/josemontano1996/tesla-landing-clone',
+      },
+      {
+        name: 'Teamkalender',
+        description: `Eine Teamkalender-Web-App, die es Teammitgliedern ermöglicht, sich zu registrieren, sich anzumelden und Ereignisse in einem gemeinsamen Kalender zu erstellen, um die Organisation zu verbessern.`,
         tags: [
           {
             name: 'Desktop',
@@ -441,8 +464,8 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'Chef-Webseite',
-        description: `In Entwicklung: Private Chef Full-Stack-Webseite, die für Essenslieferungen und Veranstaltungsmanagement verwendet wird.`,
+        name: 'Chef Webseite',
+        description: `In Entwicklung: Private Chef Full-Stack Webseite, die für die Lebensmittelzustellung und das Management von Veranstaltungen verwendet wird.`,
         tags: [
           {
             name: 'Vollständig responsiv',
@@ -493,21 +516,22 @@ export const navBar: INavBar = {
   projects: 'Projekte',
   contact: 'Kontakt',
 };
-
 export const contactPopUp: IContactPopUp = {
-  upperTitle: 'KONTAKT AUFNEHMEN',
-  callToAction: 'Mein Linkedin-Konto',
+  upperTitle: 'KONTAKTIERE UNS',
+  linkedinText: 'Linkedin',
+  githubText: 'Github',
+  emailText: 'E-Mail',
   title: 'Kontakt.',
-  name: 'Ihr Name',
-  nameLabel: 'Wie heißen Sie?',
-  email: 'Ihre E-Mail',
-  emailLabel: 'Wie lautet Ihre E-Mail-Adresse?',
-  message: 'Ihre Nachricht',
-  messageLabel: 'Was möchten Sie sagen?',
+  name: 'Dein Name',
+  nameLabel: 'Wie ist dein Name?',
+  email: 'Deine E-Mail',
+  emailLabel: 'Was ist deine E-Mail-Adresse?',
+  message: 'Deine Nachricht',
+  messageLabel: 'Was möchtest du sagen?',
   send: 'Senden',
-  alertError: 'Etwas ist schief gelaufen, bitte versuchen Sie es später erneut.',
+  alertError: 'Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.',
   alertError1: 'Der Name sollte mindestens 2 Buchstaben lang sein.',
-  alertError2: 'Ihre E-Mail ist ungültig, bitte überprüfen Sie sie erneut.',
+  alertError2: 'Deine E-Mail-Adresse ist ungültig. Bitte überprüfe sie.',
   alertError3: 'Die Nachricht sollte mindestens 10 Buchstaben lang sein.',
-  alertSuccess: 'Danke. Ihre Nachricht wurde erfolgreich gesendet.',
+  alertSuccess: 'Vielen Dank. Deine Nachricht wurde erfolgreich gesendet.',
 };

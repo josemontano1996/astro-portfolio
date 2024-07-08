@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/inter';
 import '@/styles/globals.css';
+import { ViewTransitions } from 'astro:transitions';
 import NavBar from '@/components/NavBar/NavBar.astro';
 import { ContactForm} from "@/components/Contact/ContactForm";
 import loadTranslations from '@/lib/loadTranslations';
@@ -34,6 +35,7 @@ const t = loadTranslations(locale as string);
     <meta property='og:image' content={ogImg} />
 
     <title>{title}</title>
+     <ViewTransitions />
   </head>
   <body class='bg-background text-foreground md:px-16 px-6'>
     <ContactForm t={t.contactPopUp} client:load/>

@@ -1,10 +1,4 @@
 import type { IFooter, IHomePage } from '@/interfaces/home-page';
-import {
-  DatabaseIcon,
-  LaptopIcon,
-  ServerIcon,
-  SquareCodeIcon,
-} from 'lucide-react';
 
 import {
   CalendarpAppImg,
@@ -39,50 +33,46 @@ import {
 
 export const homePage: IHomePage = {
   metadata: {
-    title: 'jm3 - Portafolio de Desarrollador Web Full Stack',
-    description: `¡Bienvenido a mi portafolio! Soy un desarrollador full stack especializado 
-    en desarrollo web, aplicaciones y sistemas. Descubre mis proyectos y experiencia
-    en tecnologías como TypeScript, JavaScript, React, Node.js y más.`,
+    title: 'jm3 - Técnico especializado en desarrollo de aplicaciones web',
+    description: `¡Bienvenido a mi portafolio! Soy un técnico especializado en desarrollo de aplicaciones web. Utilizo principios y herramientas de programación como Java, TypeScript, React, Node.js y más.`,
     og: {
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
       url: import.meta.env.PUBLIC_WEB_URL,
     },
   },
-
   heroSection: {
-    title: 'Un Mundo de Soluciones al Alcance de Tu Mano',
+    title: 'Un mundo de soluciones al alcance de tu mano.',
     subtitle:
-      'El desarrollador web que buscas, para las soluciones que necesitas.',
+      'El desarrollador web que necesitas, para las soluciones que buscas.',
     callToAction: 'Descubre más',
   },
   aboutSection: {
     title: 'Hola, soy',
     subtitle:
-      'Desarrollo aplicaciones web Full-Stack, que tu negocio necesita.',
+      'Desarrollo las aplicaciones web que tu empresa necesita. Soy un desarrollador full-stack con pasión por crear soluciones integrales.',
     ul: [
-      'Mejores prácticas de SEO',
-      'Internacionalización',
-      'Diseño Responsivo',
-      'Autenticación',
+      'Desarrollo del lado del cliente',
+      'Servidor',
       'Bases de datos',
-      'Y mucho más...',
+      'Aplicaciones web',
+      'Comercio electrónico',
+      'Internacionalización',
+      'Patrones de arquitectura',
+      'Prácticas recomendadas para código limpio',
     ],
   },
   techSection: {
-    upperTitle: 'Resumen',
-    title: 'Tecnología',
-    body: `Como Desarrollador Full-Stack, me apasiona la versatilidad. Mi viaje en el ámbito de la tecnología
-          me ha equipado con las habilidades para crear soluciones integrales. Desde el diseño front-end
-          hasta el desarrollo back-end, navego por todo el espectro, asegurándome de que los sitios web que
-          construyo no solo sean funcionales, sino también altamente eficientes.`,
-    callToAction: 'Haz clic en mí',
+    upperTitle: 'Visión general',
+    title: 'Tecnología.',
+    body: `Como técnico especializado en desarrollo de aplicaciones web, dependo de la versatilidad. Mi viaje en el mundo de la tecnología me ha equipado con las habilidades para crear soluciones integrales. Desde el diseño del front-end hasta el desarrollo del back-end, navego a través de todo el espectro para asegurar que los sitios web que construyo no solo sean funcionales, sino también altamente eficientes.`,
+    callToAction: 'Haz clic aquí',
     cards: [
       {
-        title: 'Lenguajes',
+        title: 'Lenguajes de programación',
         ul: {
           ready: [
-            { name: 'TypeScript', icon: typescriptIcon, alt: 'Typescript' },
+            { name: 'TypeScript', icon: typescriptIcon, alt: 'TypeScript' },
             { name: 'JavaScript', icon: javascriptIcon, alt: 'JavaScript' },
             { name: 'Java', icon: javaIcon, alt: 'Java' },
             { name: 'PHP', icon: phpIcon, alt: 'PHP' },
@@ -95,7 +85,7 @@ export const homePage: IHomePage = {
           ready: [
             { name: 'React', icon: reactIcon, alt: 'React' },
             { name: 'Tailwind', icon: tailwindIcon, alt: 'Tailwind' },
-            { name: 'CSS3', icon: cssIcon, alt: 'Css' },
+            { name: 'CSS3', icon: cssIcon, alt: 'CSS' },
             { name: 'Sass', icon: sassIcon, alt: 'Sass' },
             { name: 'Bootstrap', icon: bootstrapIcon, alt: 'Bootstrap' },
             { name: 'Material UI', icon: materialuiIcon, alt: 'Material UI' },
@@ -109,28 +99,28 @@ export const homePage: IHomePage = {
             {
               name: 'Next.js',
               icon: nextjsIcon,
-              alt: 'Next js',
+              alt: 'Next.js',
               bg: 'white',
             },
             {
               name: 'Express.js',
               icon: expressIcon,
-              alt: 'Express js',
+              alt: 'Express.js',
               bg: 'white',
             },
-            { name: 'Node.js', icon: nodeIcon, alt: 'Node js' },
+            { name: 'Node.js', icon: nodeIcon, alt: 'Node.js' },
             { name: 'PHP', icon: phpIcon, alt: 'PHP' },
             {
               name: 'Linux',
               icon: linuxIcon,
-              alt: 'linux',
+              alt: 'Linux',
               bg: 'white',
             },
           ],
         },
       },
       {
-        title: 'Bases de Datos',
+        title: 'Bases de datos',
         ul: {
           ready: [
             { name: 'MySQL', icon: mysqlIcon, alt: 'MySQL' },
@@ -143,90 +133,90 @@ export const homePage: IHomePage = {
   },
   experienceSection: {
     uppertitle: '¿Qué he hecho hasta ahora?',
-    title: 'Experiencia',
-    profesional: {
-      title: 'Experiencia Profesional',
-      certificationTranslation: 'Explorar Proyecto',
+    title: 'Experiencia.',
+    professional: {
+      title: 'Experiencia profesional',
+      certificationTranslation: 'Explorar proyecto',
       experiences: [
         {
           order: 2,
-          title: 'Desarrollador Web para PEP e.V',
+          title: 'Desarrollador web para PEP e.V',
           company_name: 'PEP e.V',
           icon: PEPImg,
           iconBg: '#383E56',
-          date: 'Diciembre 2023 - Presente',
+          date: 'Diciembre de 2023 - Actualidad',
           points: [
-            'Aumenté las tasas de donación (5x) implementando una plataforma de pago segura para transacciones sin problemas.',
-            'Creé desde cero la página web oficial de la ONG. Actualmente mejorándola y manteniéndola.',
-            'Desarrollé un sitio multilingüe y responsivo (Alemán, Español, Inglés) con las mejores prácticas de SEO.',
-            'Mejoré la presencia en línea de la organización, aumentando el compromiso de los voluntarios en 3x.',
+            'Aumento de las tasas de donación (5x) mediante la implementación de una plataforma de pago segura para transacciones sin problemas.',
+            'Creación del sitio web oficial de la organización desde cero. Mejora y mantenimiento actuales.',
+            'Desarrollo de un sitio web receptivo y multilingüe (alemán, español, inglés) con prácticas avanzadas de SEO.',
+            'Mejora de la presencia en línea de la organización, aumento del compromiso de los voluntarios en un 3x.',
           ],
           certification_url: 'https://www.pepev.org/',
         },
         {
           order: 1,
-          title: 'Desarrollador Web para Chef Bautista',
+          title: 'Desarrollador web para Chef Bautista',
           company_name: 'Chef Bautista',
-          date: 'Marzo 2024 - Mayo 2024',
+          date: 'Marzo de 2024 - Mayo de 2024',
           points: [
-            'Construí la aplicación web para Chef Bautista (actualmente esperando las traducciones finales del Chef). Con ella, puede publicar directamente los menús actuales y los precios actualizados.',
-            'Implementé una arquitectura limpia para mejorar el mantenimiento del código.',
-            'Desarrollé un sitio multilingüe y responsivo (Francés, Español, Inglés) con las mejores prácticas de SEO.',
-            'Mejoré la presencia en línea de la organización.',
+            'Creación de la aplicación web para Chef Bautista (actualmente esperando las traducciones finales de la chef). Ella puede publicar directamente los menús que actualmente tiene, así como los precios actualizados.',
+            'Implementación de una arquitectura limpia para mejorar la mantenibilidad de la base de código.',
+            'Desarrollo de un sitio web receptivo y multilingüe (francés, español, inglés) con prácticas avanzadas de SEO.',
+            'Mejora de la presencia en línea de la organización.',
           ],
           certification_url: 'https://ingridbautistademo.netlify.app',
         },
       ],
     },
     qualifications: {
-      title: 'Calificaciones Educativas',
+      title: 'Calificaciones de formación',
       certificationTranslation: 'Ver certificación',
       experiences: [
         {
           order: 5,
-          title: 'Grado Superior en Desarrollo de Software',
+          title: 'Formación superior en técnico de software',
           company_name: 'Escuela Técnica Nebrija',
           certification_url: '',
 
           icon: NebrijaLogo,
           iconBg: '#383E56',
-          date: 'Octubre 2023 - Presente',
+          date: 'Octubre de 2023 - Actualidad',
           points: [
-            'Aprendiendo lo esencial del desarrollo de software.',
-            'Desarrollo y mantenimiento de aplicaciones web usando tecnologías como Java, PHP u otros lenguajes relevantes.',
+            'Aprendizaje del núcleo del desarrollo de software.',
+            'Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como Java, PHP u otros lenguajes relevantes.',
             'Desarrollo de aplicaciones multiplataforma: escritorio, web y móvil.',
             'Desarrollo de aplicaciones seguras y protección de la información.',
           ],
         },
         {
           order: 4,
-          title: 'Next.js El Framework de React para Producción',
+          title: 'Next.js - El framework React para producción',
           company_name: 'Udemy',
 
           certification_url:
             'https://www.udemy.com/certificate/UC-be34cc73-b369-448c-a463-3f7725e7e110/',
           icon: UdemyLogo,
           iconBg: '#383E56',
-          date: 'Agosto 2023 - Octubre 2023',
+          date: 'Agosto de 2023 - Octubre de 2023',
           points: [
-            'Construcción de aplicaciones web Full-Stack con Next.js y TypeScript.',
-            'Generación de sitios estáticos, generación del lado del servidor, SWR.',
+            'Creación de aplicaciones web full-stack con Next.js y TypeScript.',
+            'Generación de páginas estáticas, generación del lado del servidor, SWR.',
             'Integración con pagos de PayPal.',
           ],
         },
         {
           order: 3,
-          title: 'React: De Cero a Experto (Hooks y MERN)',
+          title: 'React: De cero a experto (Hooks y MERN)',
           company_name: 'Udemy',
 
           certification_url:
             'https://www.udemy.com/certificate/UC-c1f827a0-82ba-4f37-affb-f7592a6ccee4/',
           icon: UdemyLogo,
           iconBg: '#383E56',
-          date: 'Julio 2023 - Julio 2023',
+          date: 'Julio de 2023 - Julio de 2023',
           points: [
-            'Aprendiendo React desde cero hasta construir aplicaciones completas con gestión de estado global.',
-            'Hooks, pruebas, JWT, Redux, Mongoose...',
+            'Aprendizaje de React desde cero hasta el desarrollo de aplicaciones completas con gestión global de estados.',
+            'Hooks, Testing, JWT, Redux, Mongoose...',
           ],
         },
         {
@@ -238,43 +228,41 @@ export const homePage: IHomePage = {
             'https://www.udemy.com/certificate/UC-046682ed-559f-42a0-ac8b-5359562580d7/',
           icon: UdemyLogo,
           iconBg: '#383E56',
-          date: 'Abril 2023 - Julio 2023',
+          date: 'Abril de 2023 - Junio de 2023',
           points: [
-            'Aprendiendo TypeScript para desarrollar aplicaciones web más fáciles de mantener y escalables.',
+            'Aprendizaje de TypeScript para desarrollar aplicaciones web fácilmente mantenibles.',
           ],
         },
         {
           order: 1,
-          title: '100 Días de Código - Bootcamp de Desarrollo Web 2023',
+          title: 'Bootcamp de desarrollo web 2023 - 100 días de código',
           company_name: 'Udemy',
 
           certification_url:
             'https://www.udemy.com/certificate/UC-d08e5c85-4041-4286-ac6a-d6cac5a907cf/',
           icon: UdemyLogo,
           iconBg: '#383E56',
-          date: 'Noviembre 2022 - Marzo 2023',
+          date: 'Noviembre de 2022 - Marzo de 2023',
           points: [
-            'Construcción de aplicaciones Full-Stack con HTML, CSS y JavaScript.',
-            'MVC, Express.js, Git, GitHub, DOM, CSS, MongoDB, APIs REST...',
+            'Desarrollo de aplicaciones full-stack con HTML, CSS y JavaScript.',
+            'MVC, Express.js, Git, Github, DOM, CSS, MongoDB, REST-APIs...',
           ],
         },
       ],
     },
   },
   projectsSection: {
-    uppertitle: 'Mi Trabajo',
-    title: 'Proyectos',
-    inProgressTitle: 'En desarrollo',
-    finishedProyectsTitle: 'Finalizados',
+    uppertitle: 'Mi trabajo',
+    title: 'Proyectos.',
+    inProgressTitle: 'En progreso',
+    finishedProyectsTitle: 'Terminado',
     projects: [
       {
         name: 'www.pepev.org',
-        description: `Creación de un nuevo sitio web que permite a los donantes donar dinero a través del sitio web,
-        con internacionalización en 3 idiomas y
-        mejores prácticas de SEO`,
+        description: `Creación de un nuevo sitio web para donaciones, con internacionalización en 3 idiomas y las mejores prácticas de SEO.`,
         tags: [
           {
-            name: 'Totalmente Responsivo',
+            name: 'Totalmente responsivo',
             color: 'pink-text-gradient',
           },
           {
@@ -310,8 +298,107 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.pepev.org',
       },
       {
+        name: 'Astro Portfolio Website',
+        description: `La cartera Astro-Portfolio recién migrada para un mejor rendimiento. Es el sitio web que estás visitando actualmente.`,
+        tags: [
+          {
+            name: 'Totalmente responsivo',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: OldPorfolioImg,
+        webpage_link: 'https://www.jm3.dev',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
+      {
+        name: 'Antiguo sitio web de cartera',
+        description: `Sitio web de cartera anterior. El diseño es bastante similar al de la cartera actual.`,
+        tags: [
+          {
+            name: 'Totalmente responsivo',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: OldPorfolioImg,
+        webpage_link: 'https://www.jm3.dev',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
+      {
+        name: 'Teslo Shop',
+        description: `E-commerce de ropa Full-Stack con integración de PayPal que permite a los usuarios buscar y comprar ropa.`,
+        tags: [
+          {
+            name: 'Escritorio',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'NextAuth',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'PayPal',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Mongoose',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Cloudinary',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: TesloShopImg,
+        webpage_link: 'https://teslo-shop-ruby.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/teslo-shop',
+      },
+      {
         name: 'Página de destino de Tesla',
-        description: `Réplica de la página de inicio oficial de Tesla.`,
+        description: `Réplica de la página de destino oficial de Tesla.`,
         tags: [
           {
             name: 'Escritorio',
@@ -344,78 +431,8 @@ export const homePage: IHomePage = {
           'https://github.com/josemontano1996/tesla-landing-clone',
       },
       {
-        name: 'Página de Portafolio Antiguo',
-        description: `Esta página por la que estás navegando. Viene con las mejores prácticas de SEO, internacionalización en 3 idiomas, SSGs y el
-        nuevo App Router.`,
-        tags: [
-          {
-            name: 'Totalmente Responsivo',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Three.js',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'green-text-gradient',
-          },
-        ],
-        image: OldPorfolioImg,
-        webpage_link: 'https://www.jm3.dev',
-        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
-      },
-      {
-        name: 'Teslo Shop',
-        description: `E-commerce de ropa Full-Stack con integración de PayPal, que permite a los usuarios buscar y comprar ropa. 
-          Desarrollado usando Next.js para el front-end y back-end, y MongoDB como base de datos.`,
-        tags: [
-          {
-            name: 'Escritorio',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'NextAuth',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Paypal',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Mongoose',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Cloudinary',
-            color: 'green-text-gradient',
-          },
-        ],
-        image: TesloShopImg,
-        webpage_link: 'https://teslo-shop-ruby.vercel.app',
-        source_code_link: 'https://github.com/josemontano1996/teslo-shop',
-      },
-      {
-        name: 'Calendario de Equipo',
-        description: `Página web de calendario de equipo hecha con React, donde personas del mismo equipo pueden registrarse 
-        e iniciar sesión para crear eventos en un calendario compartido para una mejor organización. Todos los datos de usuarios y
-        eventos se manejan adecuadamente a través de esta API.`,
+        name: 'Calendario de equipo',
+        description: `Una aplicación web de calendario de equipo que permite a los miembros del equipo registrarse, iniciar sesión y crear eventos en un calendario compartido para mejorar la organización.`,
         tags: [
           {
             name: 'Escritorio',
@@ -446,11 +463,11 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'Página Web de Chef',
-        description: `En desarrollo: Página web Full-Stack para chef privado que se utilizará para la entrega de alimentos y gestión de eventos.`,
+        name: 'Sitio web del chef',
+        description: `En desarrollo: Sitio web completo de Chef privado para entrega de alimentos y gestión de eventos.`,
         tags: [
           {
-            name: 'Totalmente Responsivo',
+            name: 'Totalmente responsivo',
             color: 'pink-text-gradient',
           },
           {
@@ -501,7 +518,9 @@ export const navBar: INavBar = {
 
 export const contactPopUp: IContactPopUp = {
   upperTitle: 'PONTE EN CONTACTO',
-  callToAction: 'Mi cuenta de LinkedIn',
+  linkedinText: 'Linkedin',
+  githubText: 'Github',
+  emailText: 'Email',
   title: 'Contacto.',
   name: 'Tu nombre',
   nameLabel: '¿Cuál es tu nombre?',

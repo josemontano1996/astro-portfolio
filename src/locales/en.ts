@@ -34,10 +34,8 @@ import {
 
 export const homePage: IHomePage = {
   metadata: {
-    title: 'jm3 - Full Stack Web Developer Portfolio',
-    description: `Welcome to my portfolio! I'm a full stack developer specializing 
-    in web development, applications, and systems. Check out my projects and experience
-    in technologies like TypeScript, JavaScript, React, Node.js, and more.`,
+    title: 'jm3 - Higher Technician in Web Application Development',
+    description: `Welcome to my portfolio! I am a higher technician in web application development. I leverage applications, and systems using programming principles and tools like Java, TypeScript, React, Node.js, and much more.`,
     og: {
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
@@ -47,26 +45,28 @@ export const homePage: IHomePage = {
 
   heroSection: {
     title: 'A World of Solutions at the Reach of Your Hand',
-    subtitle: 'The web developer you search, for the solutions you need.',
+    subtitle: 'The web developer you need, for the solutions you seek.',
     callToAction: 'Discover more',
   },
   aboutSection: {
-    title: 'Hi, I am',
+    title: 'Hello, I am',
     subtitle:
-      'I develop the Full-Stack web applications, that your bussiness need.',
+      'I develop the web applications, that your bussiness need. I am a Full-Stack Developer with a passion for creating comprehensive solutions.',
     ul: [
-      'Best SEO practices',
-      'Internationalization',
-      'Responsive Design',
-      'Authentication',
+      'Client-Side Development',
+      'Servers',
       'Databases',
-      'And much more...',
+      'Web Applications',
+      'E-commerce',
+      'Internationalization',
+      'Architectural patterns',
+      'Clean Code Practices',
     ],
   },
   techSection: {
     upperTitle: 'Overview',
     title: 'Tech.',
-    body: `As a Full-Stack Developer, I thrive on versatility. My journey in the realm of technology
+    body: `As a higher technician in web application development, I thrive on versatility. My journey in the realm of technology
           has equipped me with the skills to create comprehensive solutions. From front-end design
           to back-end development, I navigate the entire spectrum, ensuring that the websites I
           build are not just functional but also highly efficient.`,
@@ -138,8 +138,8 @@ export const homePage: IHomePage = {
   experienceSection: {
     uppertitle: 'What have I done so far?',
     title: 'Experience.',
-    profesional: {
-      title: 'Profesional Experience',
+    professional: {
+      title: 'Professional Experience',
       certificationTranslation: 'Explore Project',
       experiences: [
         {
@@ -263,9 +263,7 @@ export const homePage: IHomePage = {
     projects: [
       {
         name: 'www.pepev.org',
-        description: `Creating a brand-new website that allows donors to donate money throught the website,
-        with internationalization in 3 languages and
-        best SEO practices`,
+        description: `Created a new website for donations, with internationalization in 3 languages and best SEO practices.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -304,12 +302,12 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.pepev.org',
       },
       {
-        name: 'Tesla landing page',
-        description: `Replica of the Tesla official landing page.`,
+        name: 'Astro Portfolio Webpage',
+        description: `The newly migrated Astro porfolio for improved performance. It is the webpage that you are visiting. `,
         tags: [
           {
-            name: 'Desktop',
-            color: 'pink-text-gradient',
+            name: 'Fully-Responsive',
+            color: 'green-text-gradient',
           },
           {
             name: 'TypeScript',
@@ -317,29 +315,28 @@ export const homePage: IHomePage = {
           },
           {
             name: 'Next.js',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'React',
             color: 'pink-text-gradient',
           },
           {
-            name: 'RSC',
-            color: 'green-text-gradient',
+            name: 'Three.js',
+            color: 'blue-text-gradient',
           },
           {
             name: 'Tailwind',
-            color: 'blue-text-gradient',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
           },
         ],
-        image: TeslaWebImg,
-        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app/',
-        source_code_link:
-          'https://github.com/josemontano1996/tesla-landing-clone',
+        image: OldPorfolioImg,
+        webpage_link: 'https://www.jm3.dev',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {
         name: 'Old Portfolio Webpage',
-        description: `This page you are navigating through. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
+        description: `Old porfolio website. The design is pretty similar to the current porfolio. Built up with Nextjs App router. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
         new App Router.`,
         tags: [
           {
@@ -406,10 +403,42 @@ export const homePage: IHomePage = {
         source_code_link: 'https://github.com/josemontano1996/teslo-shop',
       },
       {
+        name: 'Tesla landing page',
+        description: `Replica of the Tesla official landing page.`,
+        tags: [
+          {
+            name: 'Desktop',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'React',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'RSC',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'blue-text-gradient',
+          },
+        ],
+        image: TeslaWebImg,
+        webpage_link: 'https://tesla-landing-clone-ebon.vercel.app/',
+        source_code_link:
+          'https://github.com/josemontano1996/tesla-landing-clone',
+      },
+      {
         name: 'Team Calendar',
-        description: `Team calendar webpage made with React, where people from the same team can register 
-        and log in to create events in a shared calendar for better organization, all the user and
-        events data come through this API and are properly handled.`,
+        description: `A team calendar web app made with React, allowing team members to register, log in, and create events in a shared calendar for better organization.`,
         tags: [
           {
             name: 'Desktop',
