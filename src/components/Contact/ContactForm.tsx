@@ -1,5 +1,4 @@
 import type { IContactPopUp } from '@/interfaces/shared';
-
 import { useState } from 'react';
 import { useStore } from '@nanostores/react';
 import { isContactDialogOpen } from '@/store/appStore';
@@ -9,6 +8,7 @@ import StarsCanvas from '../HeroSection/StarsCanvas';
 import { LinkedinLink } from './LinkedinLink';
 import { GithubLink } from './GithubLink';
 import { EmailLink } from './EmailLink';
+import { Button } from '../ui/button';
 
 interface Form {
   name: string;
@@ -69,10 +69,14 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
             message: '',
           });
           alert(t.alertSuccess);
+          isContactDialogOpen.set(false);
+          setLoading(false);
         },
         (error) => {
           setLoading(false);
-          alert('Something went wrong, please send an email to');
+          alert(
+            `Something went wrong, please send and email to ${import.meta.env.PUBLIC_MY_EMAIL}`,
+          );
         },
       );
   };
@@ -80,9 +84,9 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
   return (
     $isContactDialogOpen && (
       <div className="relative left-0 top-0">
-        <section className="fixed left-0 top-0 z-50 h-screen w-screen transform overflow-y-auto bg-secondary-foreground p-6 fade-in">
+        <section className="fixed left-0 top-0 z-40 h-screen w-screen transform overflow-y-auto bg-secondary-foreground p-6 fade-in">
           <div className="relative mx-auto min-h-[570px] rounded-2xl p-8 lg:max-h-[80vh] lg:max-w-[800px]">
-            <button className="right-6 cursor-pointer absolute top-8 object-contain">
+            <button className="absolute right-6 top-8 cursor-pointer object-contain">
               <X onClick={() => isContactDialogOpen.set(false)} />
             </button>
 
@@ -96,7 +100,7 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
                 <EmailLink text={t.emailText} />
               </div>
             </div>
-            <h3 className="xs:text-[40px] text-[30px] mt-6 mb-4 font-black text-white sm:text-[50px] md:text-[60px]">
+            <h3 className="xs:text-[40px] mb-4 mt-6 text-[30px] font-black text-white sm:text-[50px] md:text-[60px]">
               {t.title}
             </h3>
 
@@ -140,15 +144,16 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
                 />
               </label>
 
-              <button
+              <Button
                 type="submit"
                 className="mt-4 w-fit rounded-xl bg-primary px-8 py-3 font-bold text-secondary"
+                disabled={loading}
+                size={'lg'}
               >
-                {loading ? '...' : t.send}
-              </button>
+                {t.send}
+              </Button>
             </form>
           </div>
-
           <StarsCanvas />
         </section>
       </div>

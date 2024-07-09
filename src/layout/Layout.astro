@@ -6,6 +6,7 @@ import NavBar from '@/components/NavBar/NavBar.astro';
 import { ContactForm} from "@/components/Contact/ContactForm";
 import loadTranslations from '@/lib/loadTranslations';
 
+
 interface Props {
   title: string;
   description: string;
@@ -35,9 +36,10 @@ const t = loadTranslations(locale as string);
     <meta property='og:image' content={ogImg} />
     
     <title>{title}</title>
-    <ViewTransitions />
+    <ViewTransitions client:load/>
   </head>
   <body class='bg-background text-foreground'>
+
     <ContactForm t={t.contactPopUp} client:load/>
     <NavBar t={t.navBar}/>
     <div class="md:px-16 px-6">

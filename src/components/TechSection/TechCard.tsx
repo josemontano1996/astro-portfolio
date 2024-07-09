@@ -42,7 +42,13 @@ export const TechCard = ({ cards }: Props) => {
           <ul className="space-y-3 text-xl">
             {languages.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
-                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <img
+                  loading="eager"
+                  src={li.icon}
+                  height={30}
+                  width={30}
+                  alt={li.alt}
+                />
                 <span>{li.name}</span>
               </li>
             ))}
@@ -62,7 +68,13 @@ export const TechCard = ({ cards }: Props) => {
           <ul className="space-y-3 text-xl">
             {backEnd.ul.ready.map((li, i) => (
               <li className="flex items-center gap-3" key={i}>
-                <img src={li.icon} height={30} width={30} alt={li.alt} />
+                <img
+                  loading="eager"
+                  src={li.icon}
+                  height={30}
+                  width={30}
+                  alt={li.alt}
+                />
                 <span>{li.name}</span>
               </li>
             ))}
