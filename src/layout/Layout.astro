@@ -5,6 +5,8 @@ import { ViewTransitions } from 'astro:transitions';
 import NavBar from '@/components/NavBar/NavBar.astro';
 import { ContactForm} from "@/components/Contact/ContactForm";
 import loadTranslations from '@/lib/loadTranslations';
+import { ErrorAlert } from '@/components/ErrorAlert'
+import { SuccessAlert } from '@/components/SuccessAlert';
 
 
 interface Props {
@@ -39,7 +41,8 @@ const t = loadTranslations(locale as string);
     <ViewTransitions />
   </head>
   <body class='bg-background text-foreground'>
-
+    <ErrorAlert  client:load/>
+    <SuccessAlert client:load/>
     <ContactForm t={t.contactPopUp} client:load/>
     <NavBar t={t.navBar}/>
     <div class="md:px-16 px-6">

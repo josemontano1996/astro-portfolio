@@ -7,9 +7,9 @@ export interface INavBar {
 
 export interface IContactPopUp {
   upperTitle: string;
-  linkedinText: string,
-  githubText: string,
-  emailText:string,
+  linkedinText: string;
+  githubText: string;
+  emailText: string;
   title: string;
   name: string;
   nameLabel: string;
@@ -23,4 +23,9 @@ export interface IContactPopUp {
   alertError2: string;
   alertError3: string;
   alertSuccess: string;
+}
+
+export interface IAlert {
+  title: string;
+  message: string;
 }

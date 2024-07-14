@@ -536,7 +536,7 @@ export const contactPopUp: IContactPopUp = {
   message: 'Your Message',
   messageLabel: `What do you have to say?`,
   send: 'Send',
-  alertError: 'Something went wrong, please try again later.',
+  alertError: `Something went wrong. Try again later or refresh the webpage.`,
   alertError1: 'Name length should have a length of at least 2 letters.',
   alertError2: 'Your email is invalid, check it again please.',
   alertError3: 'The message should be at least 10 letters long.',

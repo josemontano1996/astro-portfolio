@@ -1,16 +1,20 @@
 import type { IContactPopUp } from '@/interfaces/shared';
 import { useState } from 'react';
 import { useStore } from '@nanostores/react';
-import { isContactDialogOpen } from '@/store/appStore';
-import emailjs from '@emailjs/browser';
+import {
+  errorMessage,
+  isContactDialogOpen,
+  successMessage,
+} from '@/store/appStore';
 import { X } from 'lucide-react';
 import StarsCanvas from '../HeroSection/StarsCanvas';
 import { LinkedinLink } from './LinkedinLink';
 import { GithubLink } from './GithubLink';
 import { EmailLink } from './EmailLink';
 import { Button } from '../ui/button';
+import { sendEmail } from '@/lib/emailjs';
 
-interface Form {
+export interface Form {
   name: string;
   email: string;
   message: string;
@@ -18,6 +22,8 @@ interface Form {
 
 export const ContactForm = ({ t }: { t: IContactPopUp }) => {
   const $isContactDialogOpen = useStore(isContactDialogOpen);
+  const $errorMessage = useStore(errorMessage);
+  const $succesMessage = useStore(successMessage);
 
   const [form, setForm] = useState<Form>({
     name: '',
@@ -31,54 +37,44 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    if (form.name.trim().length < 2) {
-      return alert(t.alertError1);
-    }
+    const validations = [
+      { condition: form.name.trim().length < 2, message: t.alertError1 },
+      { condition: !form.email.includes('@'), message: t.alertError2 },
+      { condition: form.message.trim().length < 10, message: t.alertError3 },
+    ];
 
-    if (!form.email.includes('@')) {
-      return alert(t.alertError2);
-    }
-
-    if (form.message.trim().length < 10) {
-      return alert(t.alertError3);
+    for (const validation of validations) {
+      if (validation.condition) {
+        setLoading(false);
+        return errorMessage.set(validation.message);
+      }
     }
 
     setLoading(true);
-    emailjs
-      .send(
-        import.meta.env.PUBLIC_EMAILJS_SERVICE_ID || '',
-        import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        {
-          from_name: form.name,
-          to_name: 'Jose Manuel Montano Mengual',
-          from_email: form.email,
-          to_email: import.meta.env.PUBLIC_MY_EMAIL,
-          message: form.message,
-        },
-        import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY || '',
-      )
-      .then(
-        () => {
-          setLoading(false);
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          });
-          alert(t.alertSuccess);
-          isContactDialogOpen.set(false);
-          setLoading(false);
-        },
-        (error) => {
-          setLoading(false);
-          alert(
-            `Something went wrong, please send and email to ${import.meta.env.PUBLIC_MY_EMAIL}`,
-          );
-        },
-      );
+
+    try {
+      sendEmail({
+        form,
+        t,
+      });
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      });
+
+      isContactDialogOpen.set(false);
+      successMessage.set(t.alertSuccess);
+    } catch (e: any) {
+      errorMessage.set(e.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
