@@ -29,7 +29,10 @@ export const MobileMenu = ({ links, contact, locale }: Props) => {
   }, []);
 
   return (
-    <div id='mobile-menu' className='md:hidden flex flex-1 justify-end relative items-center'>
+    <div
+      id="mobile-menu"
+      className="relative flex flex-1 items-center justify-end md:hidden"
+    >
       <div
         onClick={(e) => {
           e.stopPropagation(), setIsSideMenuOpen(!isSideMenuOpen);
@@ -40,24 +43,29 @@ export const MobileMenu = ({ links, contact, locale }: Props) => {
       <nav
         className={`${
           !isSideMenuOpen ? 'hidden' : 'flex'
-        } p-6 bg-popover text-popover-foreground absolute top-10 right-0 my-2 min-w-[140px] z-30 rounded-xl text-2xl`}
+        } absolute right-0 top-10 z-30 my-2 min-w-[140px] rounded-xl bg-popover p-6 text-2xl text-popover-foreground`}
       >
-        <ul className='list-none flex justify-end items-start flex-col gap-6 font-medium'>
+        <ul className="flex list-none flex-col items-start justify-end gap-6 font-medium">
           {links.map(({ id, text }) => (
             <li key={id} onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}>
-              <ScrollToIdLink id={id} text={text} styles='p-2' />
+              <ScrollToIdLink id={id} styles="p-2">
+                {text}
+              </ScrollToIdLink>
             </li>
           ))}
 
           <li
             key={links.length + 1}
             onClick={() => setIsSideMenuOpen(!isSideMenuOpen)}
-            className='p-2'
+            className="p-2"
           >
             <ContactButton t={contact} />
           </li>
-          <li key={links.length + 2} className='mx-auto'>
-            <LanguageSelector locale={locale} styles='bg-popover text-popover-foreground' />
+          <li key={links.length + 2} className="mx-auto">
+            <LanguageSelector
+              locale={locale}
+              styles="bg-popover text-popover-foreground"
+            />
           </li>
         </ul>
       </nav>

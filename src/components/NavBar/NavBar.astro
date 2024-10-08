@@ -25,6 +25,7 @@ if (!locale) {
 const {t} = Astro.props;
 
 const links: TNavLinks[] = [
+  
   { id: 'about', text: t.about },
   { id: 'experience', text: t.experience },
   { id: 'projects', text: t.projects },
@@ -34,15 +35,15 @@ const links: TNavLinks[] = [
 <header id='header' class='z-20 sticky top-0 left-0 right-0 py-4 w-screen px-8 bg-background text-secondary'>
   <div class='items-center flex w-full'>
     <nav class='w-full flex justify-between items-center max-w-8xl'>
-      <a href={`/${locale}`} class='flex items-center gap-2'>
+      <ScrollToIdLink id={'home'} styles='flex items-center gap-2' client:load>
         <AstroImage src={Logo} alt='logo image' className='w-auto h-14 object-contain' />
-      </a>
+      </ScrollToIdLink>
 
       <ul class='list-none hidden md:flex flex-row gap-10 text-[18px] font-medium cursor-pointer'>
         {
           links.map(({ id, text }) => (
             <li class='hover:text-white'>
-              <ScrollToIdLink id={id} text={text} client:load />
+              <ScrollToIdLink id={id} client:load >{text}</ScrollToIdLink>  
             </li>
           ))
         }

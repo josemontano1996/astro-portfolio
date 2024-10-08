@@ -45,7 +45,7 @@ const t = loadTranslations(locale as string);
     <SuccessAlert client:load/>
     <ContactForm t={t.contactPopUp} client:load/>
     <NavBar t={t.navBar}/>
-    <div class="md:px-16 px-6 xl:px-[15vw]">
+    <div class="md:px-16 px-6 xl:px-[15vw]" id="home">
       <slot />
     </div>
   </body>

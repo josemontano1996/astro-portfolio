@@ -1,7 +1,7 @@
 export const scrollToId = (event: any): void => {
   event.preventDefault();
 
-  const id = event.target.getAttribute('href')!.slice(1);
+  const id = event.target.closest('.scrollable-anchor').getAttribute('href')!.slice(1);
   const scrollElement = document.getElementById(id);
   const header = document.getElementById('header');
   const offset = header!.clientHeight + 10;

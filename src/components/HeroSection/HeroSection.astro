@@ -26,9 +26,10 @@ const {t} = Astro.props
           <ScrollToIdLink
             client:load
             id='about'
-            text={t.callToAction}
             styles={cn(buttonVariants({ variant: 'default', size: 'lg' }))}
-          />
+         >
+         {t.callToAction}
+          </ScrollToIdLink>
           <div></div>
         </div>
       </div>
