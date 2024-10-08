@@ -1,12 +1,13 @@
 import { scrollToId } from '@/lib/scrollToId';
 import { cn } from '../lib/utils';
+import type { ReactNode } from 'react';
 
 export const ScrollToIdLink = ({
-  text,
+  children,
   id,
   styles = '',
 }: {
-  text: string;
+  children: ReactNode;
   id: string;
   styles?: string;
 }) => {
@@ -16,9 +17,9 @@ export const ScrollToIdLink = ({
       onClick={(event) => {
         scrollToId(event);
       }}
-      className={cn(styles)}
+      className={cn('scrollable-anchor', styles)}
     >
-      {text}
+      {children}
     </a>
   );
 };

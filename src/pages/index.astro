@@ -17,7 +17,7 @@ const  footer  = t.footer
 ---
 
 <Layout description={metadata.description} ogImg={metadata.og.image} title={metadata.title}>
-  <div class='flex flex-col gap-6'>
+  <div class='flex flex-col gap-12 lg:gap-24'>
     <HeroSection t={heroSection} />
     <IntersectionObserverComponent animation='fade-in' client:load>
       <AboutSection t={aboutSection} />
@@ -25,13 +25,14 @@ const  footer  = t.footer
     <IntersectionObserverComponent animation='slide-in' client:load>
       <TechSection t={techSection}/>
     </IntersectionObserverComponent>
+      <IntersectionObserverComponent animation='fade-in' client:visible>
       <ExperienceSection t={experienceSection} />
-    <IntersectionObserverComponent animation='fade-in'client:load>
-      <ProjectsSection  t={projectsSection}/>
     </IntersectionObserverComponent>
     <IntersectionObserverComponent animation='slide-in'client:load>
+      <ProjectsSection  t={projectsSection}/>
+    </IntersectionObserverComponent>
+    <IntersectionObserverComponent animation='fade-in'client:load>
       <Footer  t={footer}/>
     </IntersectionObserverComponent>
   </div>
-
 </Layout>
