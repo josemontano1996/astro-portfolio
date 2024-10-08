@@ -13,10 +13,10 @@ interface Props {
 const {t} = Astro.props
 ---
 
-<section class='min-h-[70vh] select-none lg:h-[80vh]'>
-    <div class='flex relative justify-between flex-col lg:flex-row'>
+<section class='select-none h-70vh xl:h-[600px]'>
+    <div class='flex relative justify-between flex-col lg:flex-row lg:gap-8'>
       <div class='lg:w-1/2 mt-4 text-center'>
-        <div class='lg:absolute lg:w-[45vw] lg:top-[25%]'>
+        <div class='lg:absolute lg:w-[40vw] xl:w-[32vw] lg:top-[25%]'>
           <h2 class='font-medium sm:text-3xl text-2xl lg:text-4xl'>
             {t.title}
           </h2>
