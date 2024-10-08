@@ -361,7 +361,6 @@ export const homePage: IHomePage = {
           },
         ],
         image: OldPorfolioImg,
-        webpage_link: 'https://jm3development.vercel.app',
         source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
       {

@@ -331,8 +331,8 @@ export const homePage: IHomePage = {
         source_code_link: 'https://github.com/josemontano1996/astro-portfolio',
       },
       {
-        name: 'Antiguo sitio web de cartera',
-        description: `Sitio web de cartera anterior. El diseño es bastante similar al de la cartera actual.`,
+        name: 'Antiguo Porfolio Next 14',
+        description: `Portfolio anterior. El diseño es bastante similar al portfolio actual.`,
         tags: [
           {
             name: 'Totalmente responsivo',
