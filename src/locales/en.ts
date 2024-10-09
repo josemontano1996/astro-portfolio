@@ -150,8 +150,8 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'December 2023 - Present',
           points: [
-            'Boosted donation rates (5x) by implementing a secure payment platform for seamless transactions.',
             "Created from scratch the official ONG's webpage. Currently improving and mantaining it.",
+            'Boosted donation rates (5x) by implementing a secure payment platform for seamless transactions.',
             'Developed a responsive, multilingual site (German, Spanish, English) with top-notch SEO practices.',
             `Enhanced the organization's online presence, volunteers engagement incrememented by 3x.`,
           ],
@@ -163,7 +163,7 @@ export const homePage: IHomePage = {
           company_name: 'Chef Bautista',
           date: 'March 2024 - May 2024',
           points: [
-            'Builded the web app for Chef Bautista (currently waiting for the final translations from the Chef) With it she can directly post the menus she currently has as well as the updated prices',
+            'Builded the web app for Chef Bautista (currently waiting for the final translations from the Chef). With it she can directly post the menus she currently has as well as the updated prices',
             'Implemented clean architecture in order to improve mantainability of the codebase',
             'Developed a responsive, multilingual site (French, Spanish, English) with top-notch SEO practices.',
             `Enhanced the organization's online presence.`,
@@ -314,7 +314,7 @@ export const homePage: IHomePage = {
             color: 'blue-text-gradient',
           },
           {
-            name: 'Next.js',
+            name: 'Astro',
             color: 'pink-text-gradient',
           },
           {
@@ -326,7 +326,7 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'React i18next',
+            name: 'Nanostores',
             color: 'green-text-gradient',
           },
         ],

@@ -147,8 +147,8 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'Dezember 2023 - heute',
           points: [
-            'Erhöhte Spendenraten (5x) durch die Implementierung einer sicheren Zahlungsplattform für reibungslose Transaktionen.',
             'Erstellung der offiziellen Webseite der Organisation von Grund auf. Derzeitige Verbesserung und Wartung.',
+            'Erhöhte Spendenraten (5x) durch die Implementierung einer sicheren Zahlungsplattform für reibungslose Transaktionen.',
             'Entwicklung einer responsiven, mehrsprachigen Website (Deutsch, Spanisch, Englisch) mit erstklassigen SEO-Praktiken.',
             'Verbesserung der Online-Präsenz der Organisation, Steigerung des Engagements der Freiwilligen um das 3-fache.',
           ],
@@ -170,12 +170,12 @@ export const homePage: IHomePage = {
       ],
     },
     qualifications: {
-      title: 'Ausbildungsqualifikationen',
+      title: 'Technische Ausbildung',
       certificationTranslation: 'Zertifizierung anzeigen',
       experiences: [
         {
           order: 5,
-          title: 'Höhere Softwaretechniker-Ausbildung',
+          title: 'Softwaretechniker Fachhochschulabschluss',
           company_name: 'Nebrija Technical School',
           certification_url: '',
 
@@ -311,7 +311,7 @@ export const homePage: IHomePage = {
             color: 'blue-text-gradient',
           },
           {
-            name: 'Next.js',
+            name: 'Astro',
             color: 'pink-text-gradient',
           },
           {
@@ -323,7 +323,7 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'React i18next',
+            name: 'Nanostores',
             color: 'green-text-gradient',
           },
         ],

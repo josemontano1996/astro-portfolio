@@ -33,8 +33,8 @@ import {
 
 export const homePage: IHomePage = {
   metadata: {
-    title: 'jm3 - Técnico especializado en desarrollo de aplicaciones web',
-    description: `¡Bienvenido a mi portafolio! Soy un técnico especializado en desarrollo de aplicaciones web. Utilizo principios y herramientas de programación como Java, TypeScript, React, Node.js y más.`,
+    title: 'jm3 - Técnico superior en desarrollo de aplicaciones web',
+    description: `¡Bienvenido a mi portafolio! Soy un técnico superior en desarrollo de aplicaciones web. Utilizo principios y herramientas de programación como Java, TypeScript, React, Node.js y más.`,
     og: {
       image:
         'https://res.cloudinary.com/dfupfbnez/image/upload/v1699010770/portfolioweb_h5atzn.png',
@@ -53,19 +53,19 @@ export const homePage: IHomePage = {
       'Desarrollo las aplicaciones web que tu empresa necesita. Soy un desarrollador full-stack con pasión por crear soluciones integrales.',
     ul: [
       'Desarrollo del lado del cliente',
-      'Servidor',
+      'Servidores',
       'Bases de datos',
       'Aplicaciones web',
       'Comercio electrónico',
       'Internacionalización',
       'Patrones de arquitectura',
-      'Prácticas recomendadas para código limpio',
+      'Clean Code',
     ],
   },
   techSection: {
     upperTitle: 'Visión general',
     title: 'Tecnología.',
-    body: `Como técnico especializado en desarrollo de aplicaciones web, dependo de la versatilidad. Mi viaje en el mundo de la tecnología me ha equipado con las habilidades para crear soluciones integrales. Desde el diseño del front-end hasta el desarrollo del back-end, navego a través de todo el espectro para asegurar que los sitios web que construyo no solo sean funcionales, sino también altamente eficientes.`,
+    body: `Como técnico superior en desarrollo de aplicaciones web, me destaco por mi versatilidad. Mi trayectoria en el ámbito de la tecnología me ha dotado de las habilidades necesarias para crear soluciones integrales. Desde el diseño front-end hasta el desarrollo back-end, navego por todo el espectro, asegurando que los sitios web que construyo no solo sean funcionales, sino también altamente eficientes.`,
     callToAction: 'Haz clic aquí',
     cards: [
       {
@@ -146,8 +146,8 @@ export const homePage: IHomePage = {
           iconBg: '#383E56',
           date: 'Diciembre de 2023 - Actualidad',
           points: [
-            'Aumento de las tasas de donación (5x) mediante la implementación de una plataforma de pago segura para transacciones sin problemas.',
             'Creación del sitio web oficial de la organización desde cero. Mejora y mantenimiento actuales.',
+            'Aumento de las tasas de donación (5x) mediante la implementación de una plataforma de pago segura para transacciones sin problemas.',
             'Desarrollo de un sitio web receptivo y multilingüe (alemán, español, inglés) con prácticas avanzadas de SEO.',
             'Mejora de la presencia en línea de la organización, aumento del compromiso de los voluntarios en un 3x.',
           ],
@@ -161,7 +161,7 @@ export const homePage: IHomePage = {
           points: [
             'Creación de la aplicación web para Chef Bautista (actualmente esperando las traducciones finales de la chef). Ella puede publicar directamente los menús que actualmente tiene, así como los precios actualizados.',
             'Implementación de una arquitectura limpia para mejorar la mantenibilidad de la base de código.',
-            'Desarrollo de un sitio web receptivo y multilingüe (francés, español, inglés) con prácticas avanzadas de SEO.',
+            'Desarrollo de un sitio web responsive y multilingüe (francés, español, inglés) con prácticas avanzadas de SEO.',
             'Mejora de la presencia en línea de la organización.',
           ],
           certification_url: 'https://ingridbautistademo.netlify.app',
@@ -174,7 +174,7 @@ export const homePage: IHomePage = {
       experiences: [
         {
           order: 5,
-          title: 'Formación superior en técnico de software',
+          title: 'Técnico superior en desarrollo de aplicaciones web',
           company_name: 'Escuela Técnica Nebrija',
           certification_url: '',
 
@@ -254,7 +254,7 @@ export const homePage: IHomePage = {
   projectsSection: {
     uppertitle: 'Mi trabajo',
     title: 'Proyectos.',
-    inProgressTitle: 'En progreso',
+    inProgressTitle: 'En desarrollo',
     finishedProyectsTitle: 'Terminado',
     projects: [
       {
@@ -298,8 +298,8 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.pepev.org',
       },
       {
-        name: 'Astro Portfolio Website',
-        description: `La cartera Astro-Portfolio recién migrada para un mejor rendimiento. Es el sitio web que estás visitando actualmente.`,
+        name: 'Astro Portfolio Web',
+        description: `Mi nuevo portfolio completemente migrado a Astro para un mejor rendimiento. Es el sitio web que estás visitando actualmente.`,
         tags: [
           {
             name: 'Totalmente responsivo',
@@ -310,7 +310,7 @@ export const homePage: IHomePage = {
             color: 'blue-text-gradient',
           },
           {
-            name: 'Next.js',
+            name: 'Astro',
             color: 'pink-text-gradient',
           },
           {
@@ -322,7 +322,7 @@ export const homePage: IHomePage = {
             color: 'pink-text-gradient',
           },
           {
-            name: 'React i18next',
+            name: 'Nanostores',
             color: 'green-text-gradient',
           },
         ],
@@ -332,7 +332,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Antiguo Porfolio Next 14',
-        description: `Portfolio anterior. El diseño es bastante similar al portfolio actual.`,
+        description: `Portfolio anterior. El diseño es bastante similar al portfolio actual pero se implementaron mejoras de rendimiento y UI.`,
         tags: [
           {
             name: 'Totalmente responsivo',
@@ -397,8 +397,8 @@ export const homePage: IHomePage = {
         source_code_link: 'https://github.com/josemontano1996/teslo-shop',
       },
       {
-        name: 'Página de destino de Tesla',
-        description: `Réplica de la página de destino oficial de Tesla.`,
+        name: 'Landingpage de Tesla',
+        description: `Réplica de la landingpage oficial de Tesla.`,
         tags: [
           {
             name: 'Escritorio',
@@ -463,7 +463,7 @@ export const homePage: IHomePage = {
     ],
     inprogress: [
       {
-        name: 'Sitio web del chef',
+        name: 'Sitio web para Chef privado',
         description: `En desarrollo: Sitio web completo de Chef privado para entrega de alimentos y gestión de eventos.`,
         tags: [
           {
