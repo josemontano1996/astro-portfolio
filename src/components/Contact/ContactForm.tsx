@@ -82,8 +82,8 @@ export const ContactForm = ({ t }: { t: IContactPopUp }) => {
       <div className="relative left-0 top-0">
         <section className="fixed left-0 top-0 z-40 h-screen w-screen transform overflow-y-auto bg-secondary-foreground p-6 fade-in">
           <div className="relative mx-auto min-h-[570px] rounded-2xl p-8 lg:max-h-[80vh] lg:max-w-[800px]">
-            <button className="absolute right-6 top-8 cursor-pointer object-contain">
-              <X onClick={() => isContactDialogOpen.set(false)} />
+            <button className="absolute right-2 top-0 cursor-pointer object-contain">
+              <X onClick={() => isContactDialogOpen.set(false)}/>
             </button>
 
             <div>
