@@ -37,20 +37,15 @@ export interface ITechSection {
 
 export interface ITechElement {
   title: string;
-  ul: {
-    ready: {
-      name: string;
-      icon: string;
-      alt: string;
-      bg?: string; // Optional background color
-    }[];
-    incoming?: {
-      name: string;
-      icon: string;
-      alt: string;
-      bg?: string; // Optional background color
-    }[];
-  };
+  value: 'front' | 'back' | 'database' | 'languages';
+  content: ITechCardContent[];
+}
+
+export interface ITechCardContent {
+  name: string;
+  icon?: string;
+  alt: string;
+  bg?: string; // Optional background color
 }
 
 export interface IExperienceSection {

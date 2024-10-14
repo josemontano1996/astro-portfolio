@@ -29,6 +29,11 @@ import {
   mysqlIcon,
   typescriptIcon,
   linuxIcon,
+  shadcn,
+  laravelIcon,
+  springIcon,
+  postgreIcon,
+  sqliteIcon,
 } from 'public/icons/icon-src';
 
 export const homePage: IHomePage = {
@@ -70,64 +75,74 @@ export const homePage: IHomePage = {
     cards: [
       {
         title: 'Lenguajes de programación',
-        ul: {
-          ready: [
-            { name: 'TypeScript', icon: typescriptIcon, alt: 'TypeScript' },
-            { name: 'JavaScript', icon: javascriptIcon, alt: 'JavaScript' },
-            { name: 'Java', icon: javaIcon, alt: 'Java' },
-            { name: 'PHP', icon: phpIcon, alt: 'PHP' },
-          ],
-        },
+        value: 'languages',
+        content: [
+          { name: 'TypeScript', icon: typescriptIcon, alt: 'Typescript' },
+          { name: 'JavaScript', icon: javascriptIcon, alt: 'JavaScript' },
+          { name: 'Java', icon: javaIcon, alt: 'Java' },
+          { name: 'PHP', icon: phpIcon, alt: 'PHP' },
+        ],
       },
       {
         title: 'Front-End',
-        ul: {
-          ready: [
-            { name: 'React', icon: reactIcon, alt: 'React' },
-            { name: 'Tailwind', icon: tailwindIcon, alt: 'Tailwind' },
-            { name: 'CSS3', icon: cssIcon, alt: 'CSS' },
-            { name: 'Sass', icon: sassIcon, alt: 'Sass' },
-            { name: 'Bootstrap', icon: bootstrapIcon, alt: 'Bootstrap' },
-            { name: 'Material UI', icon: materialuiIcon, alt: 'Material UI' },
-          ],
-        },
+        value: 'front',
+        content: [
+          { name: 'React', icon: reactIcon, alt: 'React' },
+          { name: 'Tailwind', icon: tailwindIcon, alt: 'Tailwind' },
+          { name: 'CSS3', icon: cssIcon, alt: 'Css' },
+          { name: 'Sass', icon: sassIcon, alt: 'Sass' },
+          { name: 'Shadcn/ui', icon: shadcn, alt: 'shadcn/ui' },
+          { name: 'Bootstrap', icon: bootstrapIcon, alt: 'Bootstrap' },
+          { name: 'Material UI', icon: materialuiIcon, alt: 'Material UI' },
+        ],
       },
+
       {
         title: 'Back-End',
-        ul: {
-          ready: [
-            {
-              name: 'Next.js',
-              icon: nextjsIcon,
-              alt: 'Next.js',
-              bg: 'white',
-            },
-            {
-              name: 'Express.js',
-              icon: expressIcon,
-              alt: 'Express.js',
-              bg: 'white',
-            },
-            { name: 'Node.js', icon: nodeIcon, alt: 'Node.js' },
-            { name: 'PHP', icon: phpIcon, alt: 'PHP' },
-            {
+        value: 'back',
+        content: [
+          {
+            name: 'Next.js',
+            icon: nextjsIcon,
+            alt: 'Next js',
+            bg: 'white',
+          },
+          {
+            name: 'Express.js',
+            icon: expressIcon,
+            alt: 'Express js',
+            bg: 'white',
+          },
+          { name: 'Node.js', icon: nodeIcon, alt: 'Node js' },
+          { name: 'Laravel', icon: laravelIcon, alt: 'Laravel' },
+          { name: 'Spring', icon: springIcon, alt: 'spring framework' },
+          {
+            name: 'Spring Boot',
+            icon: springIcon,
+            alt: 'spring boot framework',
+          },
+          {
+            name: 'Java Microservices',
+            icon: undefined,
+            alt: 'spring boot framework',
+          },
+          /*   {
               name: 'Linux',
               icon: linuxIcon,
-              alt: 'Linux',
+              alt: 'linux',
               bg: 'white',
-            },
-          ],
-        },
+            }, */
+        ],
       },
       {
         title: 'Bases de datos',
-        ul: {
-          ready: [
-            { name: 'MySQL', icon: mysqlIcon, alt: 'MySQL' },
-            { name: 'MongoDB', icon: mongodbIcon, alt: 'MongoDB' },
-            { name: 'Mongoose', icon: mongooseIcon, alt: 'Mongoose' },
-          ],
-        },
+        value: 'database',
+        content: [
+          { name: 'MySQL', icon: mysqlIcon, alt: 'MySQL' },
+          { name: 'MongoDB', icon: mongodbIcon, alt: 'MongoDB' },
+          { name: 'SQLite', icon: sqliteIcon, alt: 'SQLite' },
+          { name: 'PostgreSQL', icon: postgreIcon, alt: 'PostgreSql' },
+        ],
       },
     ],
   },

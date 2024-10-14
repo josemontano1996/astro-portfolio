@@ -6,6 +6,7 @@ import {
   MonitorIcon,
   ServerIcon,
 } from 'lucide-react';
+import TabContent from './TabContent';
 
 interface Props {
   cards: ITechElement[];
@@ -18,7 +19,7 @@ export const TechCard = ({ cards }: Props) => {
   const databases = cards[3];
 
   return (
-    <Tabs defaultValue="languages">
+    <Tabs defaultValue={cards[0].value}>
       <TabsList className="text-primary">
         <TabsTrigger value="languages" className="flex items-center gap-1">
           <FileTerminalIcon />
@@ -37,59 +38,12 @@ export const TechCard = ({ cards }: Props) => {
           <span className="hidden sm:block">{databases.title}</span>
         </TabsTrigger>
       </TabsList>
-      <div className="mt-3 h-[200px]">
-        <TabsContent value="languages">
-          <ul className="space-y-3 text-xl">
-            {languages.ul.ready.map((li, i) => (
-              <li className="flex items-center gap-3" key={i}>
-                <img
-                  loading="eager"
-                  src={li.icon}
-                  height={30}
-                  width={30}
-                  alt={li.alt}
-                />
-                <span>{li.name}</span>
-              </li>
-            ))}
-          </ul>
-        </TabsContent>
-        <TabsContent value="front">
-          <ul className="space-y-3 text-xl">
-            {frontEnd.ul.ready.map((li, i) => (
-              <li className="flex items-center gap-3" key={i}>
-                <img src={li.icon} height={30} width={30} alt={li.alt} />
-                <span>{li.name}</span>
-              </li>
-            ))}
-          </ul>
-        </TabsContent>
-        <TabsContent value="back">
-          <ul className="space-y-3 text-xl">
-            {backEnd.ul.ready.map((li, i) => (
-              <li className="flex items-center gap-3" key={i}>
-                <img
-                  loading="eager"
-                  src={li.icon}
-                  height={30}
-                  width={30}
-                  alt={li.alt}
-                />
-                <span>{li.name}</span>
-              </li>
-            ))}
-          </ul>
-        </TabsContent>
-        <TabsContent value="database">
-          <ul className="space-y-3 text-xl">
-            {databases.ul.ready.map((li, i) => (
-              <li className="flex items-center gap-3" key={i}>
-                <img src={li.icon} height={30} width={30} alt={li.alt} />
-                <span>{li.name}</span>
-              </li>
-            ))}
-          </ul>
-        </TabsContent>
+      <div className="mt-3 lg:h-[200px]">
+        {cards.map((tab, i) => (
+          <TabsContent value={tab.value} key={tab.title}>
+            <TabContent content={tab.content} />
+          </TabsContent>
+        ))}
       </div>
     </Tabs>
   );
