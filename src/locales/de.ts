@@ -272,12 +272,13 @@ export const homePage: IHomePage = {
     inProgressTitle: 'In Entwicklung',
     finishedProyectsTitle: 'Abgeschlossen',
     projects: [
+      
       {
         name: 'www.pepev.org',
-        description: `Erstellung einer neuen Website für Spenden, mit Internationalisierung in 3 Sprachen und besten SEO-Praktiken.`,
+        description: `Ich habe die offizielle Website für die gemeinnützige Organisation PEP eV erstellt. Eine Plattform für Spenden implementiert, mit Internationalisierung in 3 Sprachen und den besten SEO-Praktiken.`,
         tags: [
           {
-            name: 'Vollständig responsiv',
+            name: 'Responsiv',
             color: 'pink-text-gradient',
           },
           {
@@ -317,7 +318,7 @@ export const homePage: IHomePage = {
         description: `Die neu migrierte Astro-Portfolio für verbesserte Leistung. Es ist die Webseite, die Sie gerade besuchen.`,
         tags: [
           {
-            name: 'Vollständig responsiv',
+            name: 'Responsiv',
             color: 'green-text-gradient',
           },
           {
@@ -345,38 +346,7 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.jm3.dev/en',
         source_code_link: 'https://github.com/josemontano1996/astro-portfolio',
       },
-      {
-        name: 'Alte Portfolio Webseite',
-        description: `Alte Portfolio-Website. Das Design ist ziemlich ähnlich wie das aktuelle Portfolio.`,
-        tags: [
-          {
-            name: 'Vollständig responsiv',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Three.js',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'green-text-gradient',
-          },
-        ],
-        image: OldPorfolioImg,
-        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
-      },
+
       {
         name: 'Teslo Shop',
         description: `Full-Stack Bekleidungs-E-Commerce mit PayPal-Integration, das es Benutzern ermöglicht, Kleidung zu suchen und zu kaufen.`,
@@ -474,6 +444,38 @@ export const homePage: IHomePage = {
         source_code_link:
           'https://github.com/josemontano1996/react-calendar-app',
       },
+      {
+        name: 'Alte Portfolio Webseite',
+        description: `Alte Portfolio-Website. Das Design ist ziemlich ähnlich wie das aktuelle Portfolio.`,
+        tags: [
+          {
+            name: 'Responsiv',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: OldPorfolioImg,
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
     ],
     inprogress: [
       {
@@ -481,7 +483,7 @@ export const homePage: IHomePage = {
         description: `In Entwicklung: Private Chef Full-Stack Webseite, die für die Lebensmittelzustellung und das Management von Veranstaltungen verwendet wird.`,
         tags: [
           {
-            name: 'Vollständig responsiv',
+            name: 'Responsiv',
             color: 'pink-text-gradient',
           },
           {

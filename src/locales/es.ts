@@ -273,11 +273,43 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Terminado',
     projects: [
       {
-        name: 'www.pepev.org',
-        description: `Creación de un nuevo sitio web para donaciones, con internacionalización en 3 idiomas y las mejores prácticas de SEO.`,
+        name: 'Proyecto Primero DAW',
+        description:
+          'Proyecto del 1er año de la escuela técnica superior, con más de 100 páginas de documentación. Desplegado utilizando un stack LAMP en un VPS a través de SSH. También se implementó un framework de enrutador personalizado utilizando vanilla PHP.',
         tags: [
           {
-            name: 'Totalmente responsivo',
+            name: 'Responsive',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'PHP',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'MySQL',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'MVC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'DAO',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: IngridWebpage,
+        webpage_link: '',
+        source_code_link:
+          'https://github.com/josemontano1996/nebrija-proyecto-integrador-1',
+      },
+
+      {
+        name: 'www.pepev.org',
+        description: `Creé el sitio web oficial para la ONG PEP eV en Alemania. Implementé una plataforma para donaciones, con internacionalización en 3 idiomas y las mejores prácticas de SEO.`,
+        tags: [
+          {
+            name: 'Responsive',
             color: 'pink-text-gradient',
           },
           {
@@ -317,7 +349,7 @@ export const homePage: IHomePage = {
         description: `Mi nuevo portfolio completemente migrado a Astro para un mejor rendimiento. Es el sitio web que estás visitando actualmente.`,
         tags: [
           {
-            name: 'Totalmente responsivo',
+            name: 'Responsive',
             color: 'green-text-gradient',
           },
           {
@@ -345,39 +377,7 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.jm3.dev/en',
         source_code_link: 'https://github.com/josemontano1996/astro-portfolio',
       },
-      {
-        name: 'Antiguo Porfolio Next 14',
-        description: `Portfolio anterior. El diseño es bastante similar al portfolio actual pero se implementaron mejoras de rendimiento y UI.`,
-        tags: [
-          {
-            name: 'Totalmente responsivo',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Three.js',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'green-text-gradient',
-          },
-        ],
-        image: OldPorfolioImg,
-        webpage_link: 'https://jm3development.vercel.app',
-        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
-      },
+
       {
         name: 'Teslo Shop',
         description: `E-commerce de ropa Full-Stack con integración de PayPal que permite a los usuarios buscar y comprar ropa.`,
@@ -413,7 +413,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Landingpage de Tesla',
-        description: `Réplica de la landingpage oficial de Tesla.`,
+        description: `Réplica de la landingpage oficial de Tesla. Creada con React y Nextjs.`,
         tags: [
           {
             name: 'Escritorio',
@@ -475,6 +475,39 @@ export const homePage: IHomePage = {
         source_code_link:
           'https://github.com/josemontano1996/react-calendar-app',
       },
+      {
+        name: 'Antiguo Porfolio Next 14',
+        description: `Portfolio anterior. El diseño es bastante similar al portfolio actual pero se implementaron mejoras de rendimiento y UI.`,
+        tags: [
+          {
+            name: 'Responsive',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: OldPorfolioImg,
+        webpage_link: 'https://jm3development.vercel.app',
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
+      },
     ],
     inprogress: [
       {
@@ -482,7 +515,7 @@ export const homePage: IHomePage = {
         description: `En desarrollo: Sitio web completo de Chef privado para entrega de alimentos y gestión de eventos.`,
         tags: [
           {
-            name: 'Totalmente responsivo',
+            name: 'Responsive',
             color: 'pink-text-gradient',
           },
           {

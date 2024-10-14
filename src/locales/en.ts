@@ -278,8 +278,38 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Finished',
     projects: [
       {
+        name: 'Projekt für die technische Schule',
+        description: `Projekt für den ersten Jahrgang des Software Development Associate-Abschlusses mit über 100 Seiten technischer Dokumentation. Bereitgestellt mit einem LAMP-Stack auf einem VPS über SSH. Außerdem wurde ein benutzerdefiniertes Router-Framework mit Vanilla PHP implementiert.`,
+        tags: [
+          {
+            name: 'Responsiv',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Vanilla PHP',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'MySQL',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'MVC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'DAO',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: IngridWebpage,
+        webpage_link: '',
+        source_code_link:
+          'https://github.com/josemontano1996/nebrija-proyecto-integrador-1',
+      },
+      {
         name: 'www.pepev.org',
-        description: `Created a new website for donations, with internationalization in 3 languages and best SEO practices.`,
+        description: `Created the official website for PEP eV non profit organisation. Implemented a platform for donations, with internationalization in 3 languages and best SEO practices.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -319,7 +349,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Astro Portfolio Webpage',
-        description: `The newly migrated Astro porfolio for improved performance. It is the webpage that you are visiting. `,
+        description: `The newly migrated Astro porfolio for improved performance. It is the webpage that you are visiting.`,
         tags: [
           {
             name: 'Fully-Responsive',
@@ -350,40 +380,7 @@ export const homePage: IHomePage = {
         webpage_link: 'https://www.jm3.dev/en',
         source_code_link: 'https://github.com/josemontano1996/astro-portfolio',
       },
-      {
-        name: 'Old Portfolio Webpage',
-        description: `Old porfolio website. The design is pretty similar to the current porfolio. Built up with Nextjs App router. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
-        new App Router.`,
-        tags: [
-          {
-            name: 'Fully-Responsive',
-            color: 'green-text-gradient',
-          },
-          {
-            name: 'TypeScript',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Next.js',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'Three.js',
-            color: 'blue-text-gradient',
-          },
-          {
-            name: 'Tailwind',
-            color: 'pink-text-gradient',
-          },
-          {
-            name: 'React i18next',
-            color: 'green-text-gradient',
-          },
-        ],
-        image: OldPorfolioImg,
 
-        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
-      },
       {
         name: 'Teslo Shop',
         description: `Full-Stack clothing e-commerce with paypal integration, that allows users to search and buy clothing. 
@@ -420,7 +417,7 @@ export const homePage: IHomePage = {
       },
       {
         name: 'Tesla landing page',
-        description: `Replica of the Tesla official landing page.`,
+        description: `Replica of the Tesla official landing page using React and Nextjs.`,
         tags: [
           {
             name: 'Desktop',
@@ -481,6 +478,40 @@ export const homePage: IHomePage = {
         webpage_link: 'https://react-calendar-app-iota.vercel.app',
         source_code_link:
           'https://github.com/josemontano1996/react-calendar-app',
+      },
+      {
+        name: 'Old Portfolio Webpage',
+        description: `Old porfolio website. The design is pretty similar to the current porfolio. Built up with Nextjs App router. It comes with best SEO practices, internationalization in 3 languages, SSGs and the
+        new App Router.`,
+        tags: [
+          {
+            name: 'Fully-Responsive',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'TypeScript',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Next.js',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'Three.js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'Tailwind',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'React i18next',
+            color: 'green-text-gradient',
+          },
+        ],
+        image: OldPorfolioImg,
+
+        source_code_link: 'https://github.com/josemontano1996/my-portfolio',
       },
     ],
     inprogress: [
