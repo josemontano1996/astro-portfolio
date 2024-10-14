@@ -16,7 +16,7 @@ const TabContent = ({ content }: { content: ITechCardContent[] }) => {
               width={logoSize}
               alt={li.alt}
             />
-          ) : <div className={`h-[${logoSize}px] w-[${logoSize}px]`}></div>}
+          ) : <div className='h-[30px] w-[30px]'></div>}
 
           <span>{li.name}</span>
         </li>
