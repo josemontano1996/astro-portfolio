@@ -272,7 +272,37 @@ export const homePage: IHomePage = {
     inProgressTitle: 'In Entwicklung',
     finishedProyectsTitle: 'Abgeschlossen',
     projects: [
-      
+      {
+        name: 'Projekt für die technische Schule',
+        description: `Projekt für den ersten Jahrgang des Software Development Associate-Abschlusses mit über 100 Seiten technischer Dokumentation. Bereitgestellt mit einem LAMP-Stack auf einem VPS über SSH. Außerdem wurde ein benutzerdefiniertes Router-Framework mit Vanilla PHP implementiert.`,
+        tags: [
+          {
+            name: 'Responsiv',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'Vanilla PHP',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'MySQL',
+            color: 'pink-text-gradient',
+          },
+          {
+            name: 'MVC',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'DAO',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image: IngridWebpage,
+        webpage_link: '',
+        source_code_link:
+          'https://github.com/josemontano1996/nebrija-proyecto-integrador-1',
+      },
+
       {
         name: 'www.pepev.org',
         description: `Ich habe die offizielle Website für die gemeinnützige Organisation PEP eV erstellt. Eine Plattform für Spenden implementiert, mit Internationalisierung in 3 Sprachen und den besten SEO-Praktiken.`,

@@ -278,11 +278,11 @@ export const homePage: IHomePage = {
     finishedProyectsTitle: 'Finished',
     projects: [
       {
-        name: 'Projekt für die technische Schule',
-        description: `Projekt für den ersten Jahrgang des Software Development Associate-Abschlusses mit über 100 Seiten technischer Dokumentation. Bereitgestellt mit einem LAMP-Stack auf einem VPS über SSH. Außerdem wurde ein benutzerdefiniertes Router-Framework mit Vanilla PHP implementiert.`,
+        name: 'Project for the Technical School',
+        description: `Project for the first year of the Software Development Associate Degree with over 100 pages of technical documentation. Deployed using a LAMP stack on a VPS via SSH. Additionally, a custom router framework was implemented with Vanilla PHP.`,
         tags: [
           {
-            name: 'Responsiv',
+            name: 'Responsive',
             color: 'green-text-gradient',
           },
           {
